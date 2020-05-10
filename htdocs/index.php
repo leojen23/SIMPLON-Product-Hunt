@@ -17,24 +17,25 @@ include './PDO/connection.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+
 </head>
 
 
 <body>
-<h3>dfmqslkdgmkdsqgjkdsjgdsq</h3>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur veniam odit fuga cumque optio error, accusantium, earum voluptates obcaecati modi nulla cupiditate voluptatibus illum debitis iure laborum. Architecto quibusdam exercitationem nulla similique ab, eos eligendi quasi consequatur commodi deleniti itaque repellendus corporis sed repellat cupiditate illum eum facilis quaerat eaque officia dolor odit esse sunt. Maxime veritatis sint et molestias quisquam? Aliquam quis dolore ipsam incidunt quam repellat corporis minima eaque modi deserunt? Voluptates distinctio accusamus sequi harum iusto fuga culpa porro dolor iste amet ea repellendus quasi tenetur quia assumenda nobis, animi vero quibusdam consequuntur? Est ex accusantium dolorem.</p>
+  <h1>hello world</h1>
 
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, perspiciatis.</p>
-    <div id="hello">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam facilis odio assumenda eius! Velit alias ea perferendis, earum iste saepe veniam mollitia dignissimos veritatis commodi!</p>
-    </div>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="../JS/script.js"></script>
+
+
+
+   
+
+    <!-- MATERIALIZE Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="../JS/script.js"></script>
 
 </body>
 
