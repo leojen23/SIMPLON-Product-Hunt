@@ -17,7 +17,7 @@ include './PDO/connection.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 
 </head>
 
@@ -35,7 +35,7 @@ include './PDO/connection.php';
     <!-- MATERIALIZE Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-  <script src="../JS/script.js"></script>
+  <script src="./JS/script.js"></script>
 
 </body>
 
