@@ -16,6 +16,9 @@ include './PDO/connection.php';
     <!-- Materialize CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <!-- MATERIALIZE ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./CSS/style.css">
 
@@ -23,15 +26,38 @@ include './PDO/connection.php';
 
 
 <body>
-  <h1>hello world</h1>
+  <!-- header and nav section start -->
+
+  <!-- header and nav section end -->
+
+  <!-- Most popular products section start-->
+
+<section class="popular-products #a1887f brown lighten-5">
+ 
+
+</section>
+
+<!-- Most popular products section end-->
+
+<!-- products list section start-->
+
+<section class="container list-products">
+
+
+</section>
+ 
+<!-- products list section ends-->
 
 
 
-
-
-
+<!-- Footer starts here -->
    
+<?php include './partials/footer.php' ?>
 
+<!-- footer ends here -->
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <!-- MATERIALIZE Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
