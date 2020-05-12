@@ -19,53 +19,63 @@ html, body{
 
 .container{
     height: 100%;
-    
 }
 
 
 /* GENERAL FORMATING----------------------------------------------- */
-
-
-/* SECTIONS ------------------------------------------------------- */
-
-/* CAROUSEL SECTION---------------------------------------------------- */
-
 .popular-products{
     padding: 1rem;
-    height: 600px;
+    height: 100%;
 }
-.carousel{
-    height: 500px;
-    
+
+/* SECTIONS ------------------------------------------------------- */
+.popular-products .card-small{
+    height: 100%;
+    padding: 0.3rem;
+    width: 100%;
 }
-.carousel-item{
+.popular-products h2{
+    font-weight: 300;
+}
+
+/* PRODUCT CARDS SECTION------------------------------------------------------- */
+
+.popular-products .card-title{
+    font-size: 20px;
+}
+.popular-products .card-content{
+  width: 100%;
   height: auto;
-
 }
-.carousel .carousel-item h3{
-    font-size: 24px;
+.popular-products .card-category{
+    font-size: 12px;
+    color: red;
+    margin: 0.5rem;
 }
+.popular-products .card-content p{
+    font-size: 13px;
+    margin-top: 1rem;
+    color: grey;
+    font-weight: 300;
 
-.carousel-item p{
     
-    padding: 1rem;
+}
+.popular-products a{
+  margin-top:1rem;
+  font-size: 18px;
+  
+  
 }
 
-.carousel-item button{
-    
-    margin: 1rem;
+/* PRODUCT LIST SECTION---------------------------------------------------- */
+
+.product-list{
+    padding: 2rem;
 }
 
-.image-container{
-    display: inline-block;
-    width: 120px;
-    height: 100px;
-}
 
-.image-container img{
-    border-radius:60px;
-    width: 120px;
-}
+
+
 
 
 

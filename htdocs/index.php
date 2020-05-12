@@ -32,19 +32,15 @@ include './PDO/connection.php';
 
   <!-- Most popular products section start-->
 
-<section class="popular-products #a1887f brown lighten-5">
- 
-
-</section>
-
-<!-- Most popular products section end-->
-
-<!-- products list section start-->
-
-<section class="container list-products">
+<?php include './partials/cards.php' ?>
+  
 
 
-</section>
+<!-- products list section starts-->
+
+
+<?php include './partials/product-list.php' ?>
+
  
 <!-- products list section ends-->
 
@@ -52,7 +48,7 @@ include './PDO/connection.php';
 
 <!-- Footer starts here -->
    
-<?php include './partials/footer.php' ?>
+  <?php include './partials/footer.php' ?>
 
 <!-- footer ends here -->
 

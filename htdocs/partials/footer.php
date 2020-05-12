@@ -1,7 +1,9 @@
 
 
-<footer class="page-footer #a1887f brown lighten-2 ">
-<div class="container">
+<footer class="page-footer #bcaaa4 brown lighten-2
+
+ ">
+    <div class="container">
         <!-- <div class="row">
             <h5 class=" white-text hide-on-small-only ">Sponsors</h5>
             <div class="col hide-on-small-only l2 valign-wrapper">
@@ -44,7 +46,7 @@
                     <li><a class="grey-text text-lighten-3" href="#">CAT4</a></li>
                     <li><a class="grey-text text-lighten-3" href="#">CAT5</a></li>
                 </ul>
-        </div>
+            </div>
 
             <div class="col l4 s12 center-align">
                 <h5 class="white-text">Backed by</h5>
@@ -58,7 +60,7 @@
         </div>
     </div>
 
-    <div class="footer-copyright">
+    <div class="footer-copyright ">
         <div class="container">
         © 2020 Copyright Text - Product Hunt
             <a class="grey-text text-lighten-4 right" href="https://twitter.com/producthunt">Twitter</a>
