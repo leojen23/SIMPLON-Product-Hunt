@@ -8,7 +8,10 @@ box-sizing: border-box;
 
 /* CSS VARIABLES ------------------------------------------------------- */
 :root{
-    
+    --color-primary:#bcaaa4;
+    --color-secondary:#f8aa91;
+    --color-btn:#bcaaa4;
+
    
 }
 html, body{
@@ -21,25 +24,27 @@ html, body{
     height: 100%;
 }
 
-
 /* GENERAL FORMATING----------------------------------------------- */
 .popular-products{
     padding: 1rem;
     height: 100%;
+    background-color: transparent;
+    background: rgb(241,175,135);
+    background: linear-gradient(0deg, rgba(241,175,135,1) 31%, rgba(255,255,255,1) 31%);
 }
 
 /* SECTIONS ------------------------------------------------------- */
-.popular-products .card-small{
-    height: 100%;
-    padding: 0.3rem;
-    width: 100%;
-}
+
+
+/* PRODUCT CARDS SECTION------------------------------------------------------- */
 .popular-products h2{
     font-weight: 300;
 }
-
-/* PRODUCT CARDS SECTION------------------------------------------------------- */
-
+.popular-products .card-small{
+    height: 100%;
+    padding: 0.5rem;
+    
+}
 .popular-products .card-title{
     font-size: 20px;
 }
@@ -49,7 +54,7 @@ html, body{
 }
 .popular-products .card-category{
     font-size: 12px;
-    color: red;
+    color: var(--color-secondary);
     margin: 0.5rem;
 }
 .popular-products .card-content p{
@@ -57,26 +62,42 @@ html, body{
     margin-top: 1rem;
     color: grey;
     font-weight: 300;
-
-    
 }
 .popular-products a{
   margin-top:1rem;
   font-size: 18px;
-  
-  
 }
 
 /* PRODUCT LIST SECTION---------------------------------------------------- */
 
-.product-list{
-    padding: 2rem;
+.product-list, .product-list{
+    padding: 2rem 1rem;
+}
+
+.popular-list .title, .product-list .title{
+    color: black;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.popular-list p, .product-list p{
+    color: gray;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.divider{
+    margin: 4rem;
+    width: 50%;
+    text-align: center;
 }
 
 
 
-
-
+/* BUTTONS ----------------------------------------------------- */
+.upvote-btn{
+    font-size: 1.3rem;
+   
+}
 
 
 

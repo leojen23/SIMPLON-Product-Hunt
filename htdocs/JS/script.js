@@ -1,17 +1,8 @@
 
-// CAROUSEL---------------------------------------------------------------
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, options);
-  });
-
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.carousel').carousel();
-  });
-
+// NAVBAR---------------------------------------------------------------
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+});
 
 // MODAL
   document.addEventListener('DOMContentLoaded', function() {
@@ -27,11 +18,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   // TABS
- 
 
-  // Or with jQuery
-
+  // with jQuery
   $(document).ready(function(){
     $('.tabs').tabs();
   });
        
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
+
+  
+ 
