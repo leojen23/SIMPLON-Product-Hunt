@@ -27,7 +27,7 @@ html, body{
 /* GENERAL FORMATING----------------------------------------------- */
 .popular-products{
     padding: 1rem;
-    height: 100%;
+    height: auto;
     background-color: transparent;
     background: rgb(241,175,135);
     background: linear-gradient(0deg, rgba(241,175,135,1) 31%, rgba(255,255,255,1) 31%);
