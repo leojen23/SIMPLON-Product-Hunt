@@ -6,17 +6,20 @@ padding: 0;
 box-sizing: border-box;
 }
 
-/* CSS VARIABLES ------------------------------------------------------- */
 :root{
     --color-primary:#bcaaa4;
     --color-secondary:#f8aa91;
-    --color-btn:#bcaaa4;
-
-   
+    --color-btn:rgb(22, 88, 85);
 }
+
 html, body{
     width: 100%;
 }
+
+
+
+/* CSS VARIABLES ------------------------------------------------------- */
+
 
 /* PAGE LAYOUT---------------------------------------------------- */
 
@@ -33,39 +36,59 @@ html, body{
     background: linear-gradient(0deg, rgba(241,175,135,1) 31%, rgba(255,255,255,1) 31%);
 }
 
+h2{
+    font-weight: 300;
+    font-size: 30px;
+}
 /* SECTIONS ------------------------------------------------------- */
 
 
 /* PRODUCT CARDS SECTION------------------------------------------------------- */
-.popular-products h2{
-    font-weight: 300;
+.popular-product{
+    background-color: whitesmoke;
+    
+
 }
-.popular-products .card-small{
+.card-container{
+    display: flex;
+    justify-content: space-between; 
+}
+.card{
     height: 100%;
-    padding: 0.5rem;
+    width: 100%;
+}
+.card-img-holder{
+  width: 100%;
     
 }
-.popular-products .card-title{
-    font-size: 20px;
+.card-img-holder img{
+    width: 100%;
+    padding: 0.5rem;
 }
-.popular-products .card-content{
-  width: 100%;
-  height: auto;
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 250px;
+    padding: 0.3rem;
 }
-.popular-products .card-category{
-    font-size: 12px;
+
+.card-info .card-title{
+    font-size: 19px;
+    display: block;
+}
+
+.card-info .card-category{
+    font-size: 13px;
     color: var(--color-secondary);
-    margin: 0.5rem;
+    margin: 0.3rem;
 }
-.popular-products .card-content p{
+
+.card-info p{
     font-size: 13px;
     margin-top: 1rem;
     color: grey;
     font-weight: 300;
-}
-.popular-products a{
-  margin-top:1rem;
-  font-size: 18px;
 }
 
 /* PRODUCT LIST SECTION---------------------------------------------------- */
@@ -82,31 +105,20 @@ html, body{
 
 .popular-list p, .product-list p{
     color: gray;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 300;
 }
-.divider{
-    margin: 4rem;
-    width: 50%;
-    text-align: center;
-}
-
-
 
 /* BUTTONS ----------------------------------------------------- */
-.upvote-btn{
-    font-size: 1.3rem;
-   
+
+.card-info .btn{
+    width: 50%;
+    margin: 0 auto;
 }
 
-
-
-
-
-
-
-
-
+.product-list .upvote-btn{
+    width: 100px;
+}
 
 
 /* FOOTER SECTION ------------------------------------------ */
@@ -131,4 +143,26 @@ footer a:hover{
 
 
 
+/* MEDIA QUERIES ------------------------------------------------------ */
 
+/* small devices */
+@media (min-width: 576px) {
+
+ }
+
+/* // Medium devices  */
+@media (min-width: 768px) {
+
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+
+}

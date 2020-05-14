@@ -18,7 +18,7 @@ $top4PopularProducts = $getPopularProductsStatement->fetchAll();
 $getPopularProductsStatement = $db->query('SELECT products.name, products.s_description AS description, products.logo, products.vote_count, categories.name AS category 
 FROM products
 INNER JOIN categories
-ON products.category_id = categories.id ORDER BY vote_count DESC LIMIT 0,10');
+ON products.category_id = categories.id ORDER BY vote_count DESC LIMIT 0,11');
 
 // List of popular products
 $popularProducts = $getPopularProductsStatement->fetchAll();
@@ -34,10 +34,10 @@ $popularProducts = $getPopularProductsStatement->fetchAll();
 $getNewestProductsStatement = $db->query('SELECT products.name, products.s_description AS description, products.logo, products.vote_count, categories.name AS category
 FROM products
 INNER JOIN categories
-ON products.category_id = categories.id ORDER BY created_at DESC LIMIT 0,6');
+ON products.category_id = categories.id ORDER BY created_at DESC LIMIT 0,11');
 
 
 // List of newest products
 $newestProducts = $getNewestProductsStatement->fetchAll();
 
-echo '<pre>' . var_export($newestProducts, true) . '</pre>';
+// echo '<pre>' . var_export($newestProducts, true) . '</pre>';

@@ -1,31 +1,7 @@
 
 
-<footer class="page-footer #bcaaa4 brown lighten-2
-
- ">
+<footer class="page-footer #bcaaa4 brown lighten-2">
     <div class="container">
-        <!-- <div class="row">
-            <h5 class=" white-text hide-on-small-only ">Sponsors</h5>
-            <div class="col hide-on-small-only l2 valign-wrapper">
-                <img class=" responsive-img" src="./IMG/logos/betaworks_white.svg">
-            </div>
-            <div class="col col hide-on-small-only m l2 valign-wrapper">
-                <img class="responsive-img" src="./IMG/logos/878ed39a-defc-11e9-90d3-0242ac110002-logo_standard (1).png">
-            </div>
-            <div class="col col hide-on-small-only l2 ">
-                <img class="responsive-img" src="./IMG/logos/deer.png">
-            </div>
-            <div class="col col hide-on-small-only l2 ">
-                <img class="responsive-img" src="./IMG/logos/Greylock-Logo-dark_RGB.svg">
-            </div>
-            <div class="col col hide-on-small-only l2 ">
-                <img class="responsive-img" src="./IMG/logos/ycombinator-logo-7481412385fe6d0f7d4a3339d90fe12309432ca41983e8d350b232301d5d8684.png">
-            </div>
-            <div class="col col hide-on-small-only l2 ">
-                <img class="responsive-img" src="./IMG/logos/fish.png">
-            </div>
-        </div> -->
-        
         <div class="row">
 
             <div class="col l4 s12 center-align">
@@ -69,3 +45,27 @@
         </div>
     </div>
 </footer>
+
+
+
+ <!-- <div class="row">
+            <h5 class=" white-text hide-on-small-only ">Sponsors</h5>
+            <div class="col hide-on-small-only l2 valign-wrapper">
+                <img class=" responsive-img" src="./IMG/logos/betaworks_white.svg">
+            </div>
+            <div class="col col hide-on-small-only m l2 valign-wrapper">
+                <img class="responsive-img" src="./IMG/logos/878ed39a-defc-11e9-90d3-0242ac110002-logo_standard (1).png">
+            </div>
+            <div class="col col hide-on-small-only l2 ">
+                <img class="responsive-img" src="./IMG/logos/deer.png">
+            </div>
+            <div class="col col hide-on-small-only l2 ">
+                <img class="responsive-img" src="./IMG/logos/Greylock-Logo-dark_RGB.svg">
+            </div>
+            <div class="col col hide-on-small-only l2 ">
+                <img class="responsive-img" src="./IMG/logos/ycombinator-logo-7481412385fe6d0f7d4a3339d90fe12309432ca41983e8d350b232301d5d8684.png">
+            </div>
+            <div class="col col hide-on-small-only l2 ">
+                <img class="responsive-img" src="./IMG/logos/fish.png">
+            </div>
+        </div> -->
