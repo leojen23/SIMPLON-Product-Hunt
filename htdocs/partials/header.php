@@ -1,5 +1,5 @@
 <?php
-include '../PDO/connection.php';
+include './PDO/connection.php';
 
 // echo '<pre>' . var_export($data, true) . '</pre>';
 ?>
@@ -16,7 +16,7 @@ include '../PDO/connection.php';
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <!-- CUSTOM CSS -->
-<link rel="stylesheet" href="../CSS/style.css">
+<link rel="stylesheet" href="./CSS/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -26,7 +26,7 @@ include '../PDO/connection.php';
 
    <nav>
         <div class="nav-wrapper brown darken-2">
-        <img src="../images/logo2.png" width="65px" class="brand-logo">  </>
+        <img src="./images/logo2.png" width="65px" class="brand-logo">  </>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="#">Photography</a></li>
@@ -85,7 +85,7 @@ include '../PDO/connection.php';
         <?php }
 
         }else{ echo('
-            <form action="header.php" method="POST" class="form-content">
+            <form action="" method="POST" class="form-content">
                 <div class="input-field col s6 l6"> 
             <i class="material-icons prefix">account_circle </i>
             <input type="text" name="username" class="validate">

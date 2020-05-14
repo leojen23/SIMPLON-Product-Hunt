@@ -1,5 +1,5 @@
 <?php
-include 'connection.php';
+include './PDO/connection.php';
 
 // retrieves TOP 4 popular products infos for CARDS
 
