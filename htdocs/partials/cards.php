@@ -20,7 +20,7 @@ include './PDO/get_products.php';
                 <img class="reponsive-img" src="<?= $top4PopularProduct["logo"]?>" alt="">
               </div>
               <div class="card-info ">
-                <span class="card-title brown-text lighten-2"><?= $top4PopularProduct["name"]?></span>
+                <span class="card-title brown-text darken-2"><?= $top4PopularProduct["name"]?></span>
                 <span class="card-category "><?= $top4PopularProduct["category"]?></span>
                 <p><?= $top4PopularProduct["description"]?></p>
                 

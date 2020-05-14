@@ -9,12 +9,13 @@
 :root{
     --color-primary:#bcaaa4;
     --color-secondary:#f8aa91;
-    --color-btn:rgb(22, 88, 85);
+    --color-btn:#00796b;
+}
 /* -------------------------------HEADER START---------------------------------- */
 
 /* GENERAL FORMATING----------------------------------------------- */
 nav{
-    height:60px;
+    height:65px;
 
 }
 
@@ -23,17 +24,10 @@ nav img{
     margin-left: 10px;
 }
 
-
-nav ul{
-    margin-bottom:10px;
-    padding:10px;
-}
-
-
 nav li:hover{
-    background-color: rgb(22, 88, 85);
-    border-radius: 5px;
+    background-color: #00796b;
 }
+
   
  nav a:hover{
     font-size: 20px;
@@ -41,23 +35,70 @@ nav li:hover{
     font-weight: bold;
 
 }
+
   
   /* BANNER SECTION ------------------------------------------------------- */
 
-.banner{
+  .banner{
     margin:0;
     padding: 0;
     height:300px; 
-    background: 95% / contain no-repeat url("../images/fond.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
+    background: 97% / 21% no-repeat url("../images/fond.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
     box-shadow: 10px 5px 5px rgb(114, 113, 113);
     text-align: center;  
+}
+
+.banner-cayegory-webapp{
+    background: 92% / 28% no-repeat url("../images/fond-webapp.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
+    box-shadow: 10px 5px 5px rgb(114, 113, 113);
+    text-align: center; 
+    margin:0;
+    padding: 0;
+    height:300px; 
+}
+
+.banner-cayegory-photography{
+    background: 94% / 27% no-repeat url("../images/fond-photography.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
+    box-shadow: 10px 5px 5px rgb(114, 113, 113);
+    text-align: center; 
+    margin:0;
+    padding: 0;
+    height:300px; 
+}
+
+
+.banner-cayegory-mac{
+    background: 90% / 15% no-repeat url("../images/fond-mac.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
+    box-shadow: 10px 5px 5px rgb(114, 113, 113);
+    text-align: center; 
+    margin:0;
+    padding: 0;
+    height:300px; 
+}
+
+.banner-cayegory-game{
+    background: 95% / 15% no-repeat url("../images/fond-game.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
+    box-shadow: 10px 5px 5px rgb(114, 113, 113);
+    text-align: center; 
+    margin:0;
+    padding: 0;
+    height:300px; 
+}
+
+.banner-cayegory-book{
+    background: 97% / 27% no-repeat url("../images/fond-book.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
+    box-shadow: 10px 5px 5px rgb(114, 113, 113);
+    text-align: center; 
+    margin:0;
+    padding: 0;
+    height:300px; 
 }
   
   .banner h1{
     font-size: 90px;
     text-shadow: 2px 2px 2px rgb(0, 0, 0); 
     color:#5d4037; 
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Anton', sans-serif;
 }
 
 .banner button{
@@ -67,10 +108,18 @@ nav li:hover{
     font-size: 17px; 
     color:rgba(244, 165, 140); 
     font-weight: bold;
+}
 
 .banner button:hover{
-    color:black;
+    color:#5d4037;
     font-weight: bold;
+}
+
+.apptitle{
+    margin-top: 90px;
+    font-family: 'Anton', sans-serif;
+    font-size: 100px; 
+    color:#5d4037;
 }
 
 .form-content{
@@ -85,17 +134,14 @@ nav li:hover{
     font-style: italic;
 }  
 
-span{
+
+.banner span{
     color:rgb(93, 93, 93);
     font-weight: bold;
     font-size: 40px;  
-
 }
   
   
-  .hamburger{
-    background-color: sienna;
-}
 
 /* @media ------------------------------------------------------- */
   
@@ -124,7 +170,10 @@ span{
     span{
     font-size: 30px;  
     }
-    
+   
+    .banner{  
+        background:linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
+        } 
 }
 /* -------------------------------HEADER END---------------------------------- */
   
@@ -138,7 +187,11 @@ span{
 
 h2{
     font-weight: 300;
-    font-size: 30px;
+    font-size: 35px;
+    color:#5d4037;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-style: italic;
 }
   
   
@@ -157,11 +210,13 @@ h2{
     background: linear-gradient(0deg, rgba(241,175,135,1) 31%, rgba(255,255,255,1) 31%);
 }
 /* PRODUCT CARDS SECTION------------------------------------------------------- */
-.popular-product{
-    background-color: whitesmoke;
-    
+.category{
+    margin-top: 50px;
+    margin-bottom: 50px;
 
 }
+
+
 .card-container{
     display: flex;
     justify-content: space-between; 
@@ -243,12 +298,12 @@ margin-bottom: 1rem;;
 
 footer a:hover{
     text-decoration: underline;
-    color:red;
 }
 
 
 .footer-copyright a{
     padding: 0 1rem
+}
       
 /*----------------------------PRODUCT LIST SECTION------------------------------*/
 
