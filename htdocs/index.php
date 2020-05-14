@@ -26,7 +26,8 @@ include './PDO/connection.php';
 
 <body>
   <!-- header and nav section start -->
-  
+  <?php include './partials/header.php' ?>
+
  
   <!-- header and nav section end -->
 
@@ -58,7 +59,7 @@ include './PDO/connection.php';
     <!-- MATERIALIZE Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-  <script src="../JS/script.js"></script>
+  <script src="./JS/script.js"></script>
 
 </body>
 
