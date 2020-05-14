@@ -1,41 +1,154 @@
 *,
 *::after,
 *::before {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* CSS VARIABLES ------------------------------------------------------- */
-:root{
-    
-   
-}
-
-html, body{
-    width: 100%;
-}
-
-/* PAGE LAYOUT---------------------------------------------------- */
-
-
-
+/* -------------------------------HEADER START---------------------------------- */
 
 /* GENERAL FORMATING----------------------------------------------- */
+nav{
+    height:60px;
+}
+
+nav img{
+    margin: 5px;
+    margin-left: 10px;
+}
+
+nav ul{
+    margin-bottom:10px;
+    padding:10px;
+}
+
+nav li:hover{
+    background-color: rgb(22, 88, 85);
+    border-radius: 5px;
+}
+
+nav a:hover{
+    font-size: 20px;
+    color:#5d4037;
+    font-weight: bold;
+
+}
+
+.banner{
+    margin:0;
+    padding: 0;
+    height:300px; 
+    background: 95% / contain no-repeat url("../images/fond.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
+    box-shadow: 10px 5px 5px rgb(114, 113, 113);
+    text-align: center;  
+}
+
+.banner h1{
+    font-size: 90px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0); 
+    color:#5d4037; 
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.banner button{
+    display: inline-block;
+    background-color: rgb(22, 88, 85);
+    border-radius: 5px;
+    font-size: 17px; 
+    color:rgba(244, 165, 140); 
+    font-weight: bold;
+
+  
+}
+
+.banner button:hover{
+    color:black;
+    font-weight: bold;
+}
+
+.form-content{
+    width:400px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;  
+}
+
+.form-content span{
+    font-size: 10px;
+    font-style: italic;
+}  
+
+span{
+    color:rgb(93, 93, 93);
+    font-weight: bold;
+    font-size: 40px;  
+}
+
+.hamburger{
+    background-color: sienna;
+}
+
+/* @media ------------------------------------------------------- */
+
+@media all and (max-width: 1024px){
+    
+    
+    body{
+        width:auto;   
+    }
+    
+    .banner{
+        width:100%;
+        height:auto;  
+    }
+
+    .banner h1{
+        font-size: 70px;
+    }
+
+    .banner button{
+        padding-left:5px;
+        padding-right:5px;
+        margin:0 auto;  
+    }
+
+    span{
+    font-size: 30px;  
+    }
+    
+}
+/* -------------------------------HEADER END---------------------------------- */
 
 
-h1{
-    color: green;
+
+/*----------------------------PRODUCT LIST SECTION------------------------------*/
+
+.product-list, .product-list{
+    padding: 2rem 1rem;
+}
+
+.popular-list .title, .product-list .title{
+    color: black;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.popular-list p, .product-list p{
+    color: gray;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.divider{
+    margin: 4rem;
+    width: 50%;
+    text-align: center;
 }
 
 
-/* SECTIONS ------------------------------------------------------- */
 
+/*-------------------------------------BUTTONS ----------------------------------- */
+.upvote-btn{
+    font-size: 1.3rem;
 
-
-
-/* COMPONENTS ------------------------------------------------------ */
-
-
-
-
+}
