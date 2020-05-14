@@ -24,3 +24,14 @@ $(document).ready(function(){
     $('.tabs').tabs();
   });
        
+
+// I apply an click event listener on all the card buttons
+  $cardButtons = document.querySelectorAll(".card-button");
+  $cardButtons.forEach($cardButton => $cardButton.addEventListener("click", updateVote))
+
+  
+  function updateVote(){
+    
+   
+    console.log("hello")
+  }

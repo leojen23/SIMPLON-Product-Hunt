@@ -1,5 +1,6 @@
 <?php
-include './PDO/connection.php';
+
+
 
 // echo '<pre>' . var_export($data, true) . '</pre>';
 ?>
@@ -26,7 +27,7 @@ include './PDO/connection.php';
 
    <nav>
         <div class="nav-wrapper brown darken-2">
-        <img src="./images/logo2.png" width="65px" class="brand-logo">  </>
+        <img src="../images/logo2.png" width="65px" class="brand-logo">  </>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="#">Photography</a></li>
@@ -59,49 +60,31 @@ include './PDO/connection.php';
         <div class="row">
             <div class="col s12 l12">
 
-      <?php    
-        if(!empty($_POST['username'])){
-          
-            $username = htmlspecialchars($_POST['username']);
-            date_default_timezone_set('Europe/Paris');
-            $created_at = date('Y-m-d H:i:s');
+                <?php    
+                if(!empty($_SESSION['username'])){
+                
+                ?>
+                    <span class="hello"> Bienvenue <?=$_SESSION['username'];?> </span>
+                <?php
 
-            //je vérifie que l'utilisateur existe déjà
-            $userStatement = $db->prepare("SELECT * FROM users WHERE username = ?");
-            $userStatement ->execute([$_POST["username"]]);
-            $user = $userStatement->fetch(PDO::FETCH_ASSOC);
+                }else{ echo('
+                        <form action="../PDO/login.php" method="POST" class="form-content">
+                            <div class="input-field col s6 l6"> 
+                        <i class="material-icons prefix">account_circle </i>
+                        <input type="text" name="username" class="validate">
+                        <label for="last_name">Pseudo</label>
+                        <span class="helper-text" data-error="wrong" data-success="right">Example: Sophie751</span>
+                            </div>
+                            <div class="col s7 l4"> 
+                        <button type="submit" class="waves-effect waves-light btn-large">Sign up</button> 
+                            </div>  
+                        <input type="hidden" name="created_at"> 
+                        </form>');
+                     } 
+                ?>
 
-            if(!$user){
-
-            //J'insère le nouveau user dans la base de donnée
-            $insertusersStatement = $db->prepare("INSERT INTO users(username, created_at) VALUES(?,?)");
-            $insertusersStatement->execute([$username, $created_at]);?>     
-                <span class="hello"> Bienvenue <?=($_POST['username']);?> </span>
-       <?php 
-            }else{?>
-
-                <span class="hello"> Bienvenue <?=($_POST['username']);?> </span>
-                       
-        <?php }
-
-        }else{ echo('
-            <form action="" method="POST" class="form-content">
-                <div class="input-field col s6 l6"> 
-            <i class="material-icons prefix">account_circle </i>
-            <input type="text" name="username" class="validate">
-            <label for="last_name">Pseudo</label>
-            <span class="helper-text" data-error="wrong" data-success="right">Example: Sophie751</span>
-                </div>
-                <div class="col s7 l4"> 
-            <button type="submit" class="waves-effect waves-light btn-large">Sign up</button> 
-                </div>  
-            <input type="hidden" name="created_at"> 
-            </form>');
-        } 
-        ?>
-
-        </div>
             </div>
+        </div>
     
     </section>
 
