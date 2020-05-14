@@ -10,6 +10,7 @@
     --color-primary:#bcaaa4;
     --color-secondary:#f8aa91;
     --color-btn:#00796b;
+    --color-btn:rgb(22, 88, 85);
 }
 /* -------------------------------HEADER START---------------------------------- */
 
@@ -44,6 +45,7 @@ nav li:hover{
     padding: 0;
     height:300px; 
     background: 97% / 21% no-repeat url("../images/fond.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
+    background: 95% / contain no-repeat url("./images/fond.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
     box-shadow: 10px 5px 5px rgb(114, 113, 113);
     text-align: center;  
 }
@@ -194,14 +196,11 @@ h2{
     font-style: italic;
 }
   
-  
-  
+ 
   
 /* SECTIONS ------------------------------------------------------- */
 
-
-  
-  
+   
   .popular-products{
     padding: 1rem;
     height: auto;

@@ -18,6 +18,7 @@ include './PDO/connection.php';
 <!-- CUSTOM CSS -->
 <link rel="stylesheet" href="./CSS/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
