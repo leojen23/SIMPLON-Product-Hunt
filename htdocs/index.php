@@ -1,6 +1,6 @@
 <?php
 session_start();
-require './PDO/connection.php';
+include './PDO/connection.php';
 
 
 // echo '<pre>' . var_export($data, true) . '</pre>';
@@ -28,7 +28,7 @@ require './PDO/connection.php';
 <body>
   <!-- header and nav section start -->
   <?php include './partials/header.php' ?>
-<a href="/partials/logout.php">disconnect</a>
+
  
   <!-- header and nav section end -->
 

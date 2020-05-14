@@ -24,9 +24,12 @@ if(!empty($_POST['username'])){
     $insertusersStatement = $db->prepare("INSERT INTO users(username, created_at) VALUES(?,?)");
     $insertusersStatement->execute([$username, $created_at]); 
        
-       header("Location: ../index.php");
+    // I go back to the landing page
+    header("Location: ../index.php");
+
     }else{
-        
+    
+    // I got back to the landing page
         header("Location: ../index.php");
     }
 

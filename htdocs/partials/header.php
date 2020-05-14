@@ -65,13 +65,14 @@
                 
                 ?>
                     <span class="hello"> Bienvenue <?=$_SESSION['username'];?> </span>
+                    <a href="/PDO/logout.php">disconnect</a>
                 <?php
 
                 }else{ echo('
                         <form action="../PDO/login.php" method="POST" class="form-content">
                             <div class="input-field col s6 l6"> 
                         <i class="material-icons prefix">account_circle </i>
-                        <input type="text" name="username" class="validate">
+                        <input type="text" name="username" class="validate" required>
                         <label for="last_name">Pseudo</label>
                         <span class="helper-text" data-error="wrong" data-success="right">Example: Sophie751</span>
                             </div>
