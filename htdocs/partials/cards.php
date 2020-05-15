@@ -24,12 +24,12 @@ include './PDO/get_products.php';
                 <p><?= $top4PopularProduct["description"]?></p>
                 
                 
-                <form action="send_votes.php?productId=<?=$top4PopularProduct["description"]?>" method="GET">
-                  <input type="hidden" id="productId" name="productId">
-                  <a class=" waves-effect btn upvote-btn card-button" type="submit">
+                
+                  
+                  <a href="./PDO/send_votes.php?productId=<?=$top4PopularProduct["id"]?>" class=" waves-effect btn upvote-btn card-button" type="submit">
                     <i class="material-icons left">keyboard_arrow_up</i><?= $top4PopularProduct["vote_count"]?>
                   </a>
-                </form>
+                
 
 
 

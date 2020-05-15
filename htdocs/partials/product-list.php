@@ -32,7 +32,7 @@
                             <span class="title"><?= $popularProduct["name"]?></span>
                             <p><?= $popularProduct["description"]?> <br>
                             <small><?= $popularProduct["category"]?></small></p>
-                            <a class=" secondary-content waves-effect #5d4037 brown darken-2 btn upvote-btn" type="submit">
+                            <a href="../PDO/send_votes.php?productId=<?=$popularProduct["id"]?>" class=" secondary-content waves-effect #5d4037 brown darken-2 btn upvote-btn" type="submit">
                                 <i class="material-icons left">keyboard_arrow_up</i><?= $popularProduct["vote_count"]?>
                             </a>  
                         </li>
@@ -55,7 +55,7 @@
                             <span class="title"><?= $newestProduct["name"]?></span>
                             <p><?= $newestProduct["description"]?> <br>
                             <small><?= $newestProduct["category"]?></small></p>
-                            <a class=" secondary-content waves-effect #5d4037 brown darken-2 btn upvote-btn" type="submit">
+                            <a href="../PDO/send_votes.php?productId=<?=$newestProduct["id"]?>" class=" secondary-content waves-effect #5d4037 brown darken-2 btn upvote-btn" type="submit">
                                 <i class="material-icons left">keyboard_arrow_up</i><?= $newestProduct["vote_count"]?>
                             </a> 
                         </li>

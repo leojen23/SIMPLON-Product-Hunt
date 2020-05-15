@@ -30,10 +30,9 @@ $(document).ready(function(){
 
   
 // I apply an click event listener on all the card buttons
-  $cardButtons = document.querySelectorAll(".card-button");
-  $cardButtons.forEach($cardButton => $cardButton.addEventListener("click", updateVote))
+  $upvoteBtns = document.querySelectorAll(".upvote-btn");
+  $upvoteBtns.forEach($upvoteBtns => $upvoteBtn.addEventListener("click", updateVote))
 
-  
   function updateVote(){
     
    
