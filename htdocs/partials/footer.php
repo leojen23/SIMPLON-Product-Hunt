@@ -1,4 +1,6 @@
+<?php
 
+?>
 
 <footer class="page-footer brown darken-2">
     <div class="container">

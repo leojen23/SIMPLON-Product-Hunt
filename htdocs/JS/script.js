@@ -34,7 +34,8 @@ $(document).ready(function(){
   $upvoteBtns.forEach($upvoteBtns => $upvoteBtn.addEventListener("click", updateVote))
 
   function updateVote(){
-    
-   
     console.log("hello")
+
+    
+    fetch();
   }

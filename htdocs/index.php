@@ -1,7 +1,7 @@
 <?php
-session_start();
-include './PDO/connection.php';
 
+include './PDO/connection.php';
+include './PDO/get_products.php';
 
 // echo '<pre>' . var_export($data, true) . '</pre>';
 ?>
@@ -26,7 +26,7 @@ include './PDO/connection.php';
 </head>
 
 <body>
-  
+
   <!-- header and nav section start -->
   <?php include './partials/header.php' ?>
 

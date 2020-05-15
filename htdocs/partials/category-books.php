@@ -1,6 +1,7 @@
 <?php
 include '../PDO/connection.php';
 
+
 // echo '<pre>' . var_export($data, true) . '</pre>';
 
 $getCategoryProductsStatement = $db->query('SELECT products.name, products.s_description AS description, products.logo, products.vote_count, categories.name AS category 
