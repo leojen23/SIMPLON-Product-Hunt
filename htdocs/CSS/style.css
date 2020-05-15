@@ -29,7 +29,6 @@ nav li:hover{
     background-color: #00796b;
 }
 
-  
  nav a:hover{
     font-size: 20px;
     color:#5d4037;
@@ -44,8 +43,7 @@ nav li:hover{
     margin:0;
     padding: 0;
     height:300px; 
-    background: 97% / 21% no-repeat url("../images/fond.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
-    background: 95% / contain no-repeat url("./images/fond.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
+    background: 97% / 21% no-repeat url("../images/fond.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));    
     box-shadow: 10px 5px 5px rgb(114, 113, 113);
     text-align: center;  
 }
@@ -59,7 +57,8 @@ nav li:hover{
     height:300px; 
 }
 
-.banner-cayegory-photography{
+
+.banner-category-photography{
     background: 94% / 27% no-repeat url("../images/fond-photography.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
     box-shadow: 10px 5px 5px rgb(114, 113, 113);
     text-align: center; 
@@ -69,7 +68,7 @@ nav li:hover{
 }
 
 
-.banner-cayegory-mac{
+.banner-category-mac{
     background: 90% / 15% no-repeat url("../images/fond-mac.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
     box-shadow: 10px 5px 5px rgb(114, 113, 113);
     text-align: center; 
@@ -78,7 +77,7 @@ nav li:hover{
     height:300px; 
 }
 
-.banner-cayegory-game{
+.banner-category-game{
     background: 95% / 15% no-repeat url("../images/fond-game.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
     box-shadow: 10px 5px 5px rgb(114, 113, 113);
     text-align: center; 
@@ -87,7 +86,7 @@ nav li:hover{
     height:300px; 
 }
 
-.banner-cayegory-book{
+.banner-category-book{
     background: 97% / 27% no-repeat url("../images/fond-book.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
     box-shadow: 10px 5px 5px rgb(114, 113, 113);
     text-align: center; 
@@ -95,6 +94,7 @@ nav li:hover{
     padding: 0;
     height:300px; 
 }
+
   
   .banner h1{
     font-size: 90px;
@@ -209,9 +209,14 @@ h2{
     background: linear-gradient(0deg, rgba(241,175,135,1) 31%, rgba(255,255,255,1) 31%);
 }
 /* PRODUCT CARDS SECTION------------------------------------------------------- */
+
+    
+    
+
 .category{
     margin-top: 50px;
     margin-bottom: 50px;
+
 
 }
 
@@ -350,4 +355,3 @@ footer a:hover{
 
 
 }
-

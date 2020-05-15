@@ -10,7 +10,6 @@ include './PDO/get_products.php';
       </div>
   </div>
 
-
   <div class="row">
     <?php foreach($top4PopularProducts as $top4PopularProduct): ?>
       <div class="col s12 m6 l3 ">
@@ -25,8 +24,9 @@ include './PDO/get_products.php';
                 <p><?= $top4PopularProduct["description"]?></p>
                 
                 
-                <form action="send_votes.php" method="POST">
-                  <a class=" waves-effect btn upvote-btn" type="submit">
+                <form action="send_votes.php?productId=<?=$top4PopularProduct["description"]?>" method="GET">
+                  <input type="hidden" id="productId" name="productId">
+                  <a class=" waves-effect btn upvote-btn card-button" type="submit">
                     <i class="material-icons left">keyboard_arrow_up</i><?= $top4PopularProduct["vote_count"]?>
                   </a>
                 </form>
