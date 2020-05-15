@@ -58,7 +58,7 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
  
   
 
-<section class="banner-cayegory-webapp">
+<section class="banner-category-webapp">
     <div class="row">
         <div class="col s12 l12">
 

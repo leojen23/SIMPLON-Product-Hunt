@@ -2,10 +2,24 @@
 session_start();
 include './PDO/connection.php';
 
+$valid = true;
 
+if(isset($_GET['submit']) AND isset($_GET['search'])){
+    $search = htmlspecialchars($_GET["search"]);
+
+    if(empty($search)){
+        $valid= false;
+        echo("Taper une recherche");
+    }
+
+    if($valid){
+    $searchByName=$db->prepare("SELECT * FROM products WHERE name LIKE ?");
+    $searchByName->execute(["%". $search ."%"]);
+    $products=$searchByName->fetchAll();
+
+    }}
 // echo '<pre>' . var_export($data, true) . '</pre>';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
