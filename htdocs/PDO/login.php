@@ -1,7 +1,6 @@
 <?php
-session_start();
 
-require 'connection.php';
+include 'connection.php';
 
 // echo '<pre>' . var_export($data, true) . '</pre>';
 
@@ -38,4 +37,3 @@ if(!empty($_POST['username'])){
 
     
 
-    
