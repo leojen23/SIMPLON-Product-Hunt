@@ -9,7 +9,6 @@ INNER JOIN categories
 ON products.category_id = categories.id WHERE categories.id=4');
 
 $categoryProducts = $getCategoryProductsStatement->fetchAll();
-
 ?>
 
 <!DOCTYPE html>

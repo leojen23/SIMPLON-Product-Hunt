@@ -5,11 +5,9 @@ $(document).ready(function(){
 });
 
 // MODAL
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, options);
-  });
-
+$(document).ready(function(){
+  $('.modal').modal();
+});
   // TABS
   $(document).ready(function(){
     $('.tabs').tabs();
@@ -17,8 +15,8 @@ $(document).ready(function(){
        
 
 
- 
-  
+
+
 // // I apply an click event listener on all the card buttons
 //   $upvoteBtns = document.querySelectorAll(".upvote-btn");
 //   $upvoteBtns.forEach($upvoteBtns => $upvoteBtn.addEventListener("click", updateVote))

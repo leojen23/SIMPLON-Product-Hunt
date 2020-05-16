@@ -11,6 +11,7 @@ if(!empty($_GET["productId"])){
     // retrieves product ID 
     $productId = intval($_GET["productId"]);
 
+
     // retrieves and convert into INT user ID 
     $username = $_SESSION["username"] ;
     $getUserIdStatement = $db->prepare("SELECT id FROM users WHERE username = ?");
@@ -25,6 +26,8 @@ if(!empty($_GET["productId"])){
 
     header("location: ../index.php");
 
+}else{
+    echo "wtf";
 }
 
 
