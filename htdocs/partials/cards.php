@@ -1,8 +1,7 @@
 <?php 
-include './PDO/get_products.php';
+
+
 ?>
-
-
 <section class=" popular-product container">
   <div class="row">
       <div class="col s12 left-align brown-text lighten-2">
@@ -12,6 +11,11 @@ include './PDO/get_products.php';
 
   <div class="row">
     <?php foreach($top4PopularProducts as $top4PopularProduct): ?>
+      <?php $getVoteCount = $db->prepare("SELECT COUNT(*) FROM votes WHERE product_id = ?");
+        $getVoteCount->execute([$top4PopularProduct["id"]]);
+        $voteCount = $getVoteCount->fetchColumn();?>
+
+
       <div class="col s12 m6 l3 ">
         <div class="center-align card-container">
           <div class="card hoverable">
@@ -24,15 +28,11 @@ include './PDO/get_products.php';
                 <p><?= $top4PopularProduct["description"]?></p>
                 
                 
-                <form action="send_votes.php?productId=<?=$top4PopularProduct["description"]?>" method="GET">
-                  <input type="hidden" id="productId" name="productId">
-                  <a class=" waves-effect btn upvote-btn card-button" type="submit">
-                    <i class="material-icons left">keyboard_arrow_up</i><?= $top4PopularProduct["vote_count"]?>
+  
+                  <a href="./PDO/votes.php?productId=<?= $top4PopularProduct["id"]?>" class=" waves-effect btn upvote-btn card-button" type="submit">
+                    <i class="material-icons left">keyboard_arrow_up</i><?= $voteCount?>
                   </a>
-                </form>
-
-
-
+              
                 <div class="card-action">
                 <a href="#modal1" class="modal-trigger brown-text lighten-2">FIND OUT MORE</a>
                 </div>

@@ -1,5 +1,4 @@
 <?php
-include './PDO/connection.php';
 
 // retrieves TOP 4 popular products infos for CARDS
 
@@ -15,7 +14,7 @@ $top4PopularProducts = $getPopularProductsStatement->fetchAll();
 
 // retrieves all popular products infos for the popular list on landing page
 
-$getPopularProductsStatement = $db->query('SELECT products.name, products.s_description AS description, products.logo, products.vote_count, categories.name AS category 
+$getPopularProductsStatement = $db->query('SELECT products.id, products.name, products.s_description AS description, products.logo, products.vote_count, categories.name AS category 
 FROM products
 INNER JOIN categories
 ON products.category_id = categories.id ORDER BY vote_count DESC LIMIT 0,11');
@@ -31,7 +30,7 @@ $popularProducts = $getPopularProductsStatement->fetchAll();
 
 // retrieves all popular products infos for the popular list on landing page
 
-$getNewestProductsStatement = $db->query('SELECT products.name, products.s_description AS description, products.logo, products.vote_count, categories.name AS category
+$getNewestProductsStatement = $db->query('SELECT products.id, products.name, products.s_description AS description, products.logo, products.vote_count, categories.name AS category
 FROM products
 INNER JOIN categories
 ON products.category_id = categories.id ORDER BY created_at DESC LIMIT 0,11');

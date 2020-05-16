@@ -1,6 +1,6 @@
 <?php
-session_start();
 include './PDO/connection.php';
+include './PDO/get_products.php';
 
 $valid = true;
 
@@ -40,33 +40,22 @@ if(isset($_GET['submit']) AND isset($_GET['search'])){
 </head>
 
 <body>
+
   <!-- header and nav section start -->
   <?php include './partials/header.php' ?>
 
- 
-  <!-- header and nav section end -->
-
   <!-- Most popular products section start-->
+  <?php include './partials/cards.php' ?>
 
-<?php include './partials/cards.php' ?>
-  
+  <!-- products list section starts-->
 
+  <?php include './partials/product-list.php' ?>
 
-<!-- products list section starts-->
-
-
-<?php include './partials/product-list.php' ?>
-
- 
-<!-- products list section ends-->
-
-
-
-<!-- Footer starts here -->
-   
+  <!-- Footer starts here -->
+    
   <?php include './partials/footer.php' ?>
 
-<!-- footer ends here -->
+
 
 
 
