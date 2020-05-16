@@ -59,7 +59,7 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
  
   
 
-<section class="banner-category-game">
+<section class=" banner banner-category-game">
     <div class="row">
         <div class="col s12 l12">
 
@@ -79,7 +79,7 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
                 <h2>Games applications</h2>
 
             <?php foreach($categoryProducts as $categoryProduct): ?>
-                <ul class="collection z-depth-1 hoverable">
+                <ul class="collection z-depth-1">
                         <li class="collection-item avatar">
                             <img src="<?= $categoryProduct["logo"]?>" alt="" class="circle">
                             <span class="title"><?= $categoryProduct["name"]?></span>

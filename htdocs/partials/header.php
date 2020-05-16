@@ -29,39 +29,39 @@
         </ul>
 
    
-    <section class="banner">
+    <section class="banner banner-landing-page">
         <div class="row">
             <div class="col s12 l12">
-
                 <h1>Product Hunt</h1>
-
                 <div class="row">
-                <div class="col s12 l12">
+                    <div class="col s12 l12">
 
+                        <?php 
+                            if(!empty($_SESSION['username'])){
+                        ?>
+                        
+                        <div class="greeting-msg">
+                            <span class="hello"> Bienvenue <?=$_SESSION['username'];?> </span>
+                            <a href="/PDO/logout.php" type="submit" class="waves-effect waves-light btn-large">Log out</a> 
+                        </div>   
 
-                    <?php    
-                    if(!empty($_SESSION['username'])){
-
-                    ?>
-                        <span class="hello"> Bienvenue <?=$_SESSION['username'];?> </span>
-                        <a href="/PDO/logout.php">disconnect</a>
-                    <?php
-
-                    }else{ echo('
-                            <form action="../PDO/login.php" method="POST" class="form-content">
-                                <div class="input-field col s6 l6"> 
-                                <i class="material-icons prefix">account_circle </i>
-                                <input type="text" name="username" class="validate" required>
-                                <label for="last_name">Pseudo</label>
-                                <span class="helper-text" data-error="wrong" data-success="right">Example: Sophie751</span>
-                                </div>
-                                <div class="col s7 l4"> 
-                                <button type="submit" class="waves-effect waves-light btn-large">Sign up</button> 
-                                </div>  
-                                <input type="hidden" name="created_at"> 
-                            </form>');
-                        } 
-                    ?>
+                        <?php
+                        
+                        }else{ echo('
+                                <form action="../PDO/login.php" method="POST" class="form-content">
+                                    <div class="input-field col s6 l6"> 
+                                    <i class="material-icons prefix">account_circle </i>
+                                    <input type="text" name="username" class="validate" required>
+                                    <label for="last_name">Pseudo</label>
+                                    <span class="helper-text" data-error="wrong" data-success="right">Example: Sophie751</span>
+                                    </div>
+                                    <div class="col s7 l4"> 
+                                    <button type="submit" class="waves-effect waves-light btn-large">Sign up</button> 
+                                    </div>  
+                                    <input type="hidden" name="created_at"> 
+                                </form>');
+                            } 
+                        ?>
                 </div>
             </div>
         

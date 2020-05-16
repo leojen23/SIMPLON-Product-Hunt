@@ -2,13 +2,10 @@
 
 include "connection.php";
 
-// $request = $db->query("SELECT product_id FROM votes ");
-// $yo = $request->fetchAll();
-// echo '<pre>' . var_export($yo, true) . '</pre>';
-// var_dump($yo);
 
 
 //     // SENDING VOTES----------------------------------------------------------------------------------------
+
 if(!empty($_GET["productId"])){
 
     // retrieves product ID 
@@ -32,6 +29,10 @@ if(!empty($_GET["productId"])){
 
 
 
+// $request = $db->query("SELECT product_id FROM votes ");
+// $yo = $request->fetchAll();
+// echo '<pre>' . var_export($yo, true) . '</pre>';
+// var_dump($yo);
 
 
 

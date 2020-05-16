@@ -10,16 +10,7 @@ $(document).ready(function(){
     var instances = M.Modal.init(elems, options);
   });
 
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.modal').modal();
-  });
-
-
   // TABS
-
-  // with jQuery
   $(document).ready(function(){
     $('.tabs').tabs();
   });
@@ -29,13 +20,13 @@ $(document).ready(function(){
 
 
   
-// I apply an click event listener on all the card buttons
-  $upvoteBtns = document.querySelectorAll(".upvote-btn");
-  $upvoteBtns.forEach($upvoteBtns => $upvoteBtn.addEventListener("click", updateVote))
+// // I apply an click event listener on all the card buttons
+//   $upvoteBtns = document.querySelectorAll(".upvote-btn");
+//   $upvoteBtns.forEach($upvoteBtns => $upvoteBtn.addEventListener("click", updateVote))
 
-  function updateVote(){
-    console.log("hello")
+//   function updateVote(){
+//     console.log("hello")
 
     
-    fetch();
-  }
+//     fetch();
+//   }

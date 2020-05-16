@@ -18,11 +18,11 @@
             <div class="col l4 s12 center-align">
                 <h5 class="white-text">Product Categories</h5>
                 <ul>
-                    <li><a class="grey-text text-lighten-3" href="./partials/category-photography.php">Photography</a></li>
-                    <li><a class="grey-text text-lighten-3" href="./partials/category-mac.php">Mac</a></li>
-                    <li><a class="grey-text text-lighten-3" href="./partials/category-games.php">Games</a></li>
-                    <li><a class="grey-text text-lighten-3" href="./partials/category-books.php">Books</a></li>
-                    <li><a class="grey-text text-lighten-3" href="./partials/category-webapp.php">Webapp</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../partials/category-photography.php">Photography</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../partials/category-mac.php">Mac</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../partials/category-games.php">Games</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../partials/category-books.php">Books</a></li>
+                    <li><a class="grey-text text-lighten-3" href="../partials/category-webapp.php">Webapp</a></li>
                 </ul>
             </div>
 
