@@ -9,11 +9,11 @@
         <img src="../images/logo2.png" width="65px" class="brand-logo">  </>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-        <li><a href="./partials/category-photography.php">Photography</a></li>
-            <li><a href="./partials/category-mac.php">Mac</a></li>
-            <li><a href="./partials/category-games.php">Games</a></li>
-            <li><a href="./partials/category-books.php">Books</a></li>
-            <li><a href="./partials/category-webapp.php">Webapp</a></li>
+        <li><a href="./category-photography.php">Photography</a></li>
+            <li><a href="./category-mac.php">Mac</a></li>
+            <li><a href="./category-games.php">Games</a></li>
+            <li><a href="./category-books.php">Books</a></li>
+            <li><a href="./category-webapp.php">Webapp</a></li>
 
 
         </ul>
@@ -21,11 +21,11 @@
     </nav>
           
         <ul class="sidenav" class="hamburger">
-            <li><a href="./partials/category-photography.php">Photography</a></li>
-            <li><a href="./partials/category-mac.php">Mac</a></li>
-            <li><a href="./partials/category-games.php">Games</a></li>
-            <li><a href="./partials/category-books.php">Books</a></li>
-            <li><a href="./partials/category-webapp.php">Webapp</a></li>
+            <li><a href="./category-photography.php">Photography</a></li>
+            <li><a href="./category-mac.php">Mac</a></li>
+            <li><a href="./category-games.php">Games</a></li>
+            <li><a href="./category-books.php">Books</a></li>
+            <li><a href="./category-webapp.php">Webapp</a></li>
         </ul>
 
    

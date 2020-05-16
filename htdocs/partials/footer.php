@@ -18,11 +18,11 @@
             <div class="col l4 s12 center-align">
                 <h5 class="white-text">Product Categories</h5>
                 <ul>
-                    <li><a class="grey-text text-lighten-3" href="../partials/category-photography.php">Photography</a></li>
-                    <li><a class="grey-text text-lighten-3" href="../partials/category-mac.php">Mac</a></li>
-                    <li><a class="grey-text text-lighten-3" href="../partials/category-games.php">Games</a></li>
-                    <li><a class="grey-text text-lighten-3" href="../partials/category-books.php">Books</a></li>
-                    <li><a class="grey-text text-lighten-3" href="../partials/category-webapp.php">Webapp</a></li>
+                    <li><a class="grey-text text-lighten-3" href="./category-photography.php">Photography</a></li>
+                    <li><a class="grey-text text-lighten-3" href="./category-mac.php">Mac</a></li>
+                    <li><a class="grey-text text-lighten-3" href="./category-games.php">Games</a></li>
+                    <li><a class="grey-text text-lighten-3" href="./category-books.php">Books</a></li>
+                    <li><a class="grey-text text-lighten-3" href="./category-webapp.php">Webapp</a></li>
                 </ul>
             </div>
 
@@ -50,24 +50,3 @@
 
 
 
- <!-- <div class="row">
-            <h5 class=" white-text hide-on-small-only ">Sponsors</h5>
-            <div class="col hide-on-small-only l2 valign-wrapper">
-                <img class=" responsive-img" src="./IMG/logos/betaworks_white.svg">
-            </div>
-            <div class="col col hide-on-small-only m l2 valign-wrapper">
-                <img class="responsive-img" src="./IMG/logos/878ed39a-defc-11e9-90d3-0242ac110002-logo_standard (1).png">
-            </div>
-            <div class="col col hide-on-small-only l2 ">
-                <img class="responsive-img" src="./IMG/logos/deer.png">
-            </div>
-            <div class="col col hide-on-small-only l2 ">
-                <img class="responsive-img" src="./IMG/logos/Greylock-Logo-dark_RGB.svg">
-            </div>
-            <div class="col col hide-on-small-only l2 ">
-                <img class="responsive-img" src="./IMG/logos/ycombinator-logo-7481412385fe6d0f7d4a3339d90fe12309432ca41983e8d350b232301d5d8684.png">
-            </div>
-            <div class="col col hide-on-small-only l2 ">
-                <img class="responsive-img" src="./IMG/logos/fish.png">
-            </div>
-        </div> -->

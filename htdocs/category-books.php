@@ -1,12 +1,13 @@
 <?php
-include '../PDO/connection.php';
+include './PDO/connection.php';
+
 
 // echo '<pre>' . var_export($data, true) . '</pre>';
 
 $getCategoryProductsStatement = $db->query('SELECT products.name, products.s_description AS description, products.logo, products.vote_count, categories.name AS category 
 FROM products
 INNER JOIN categories
-ON products.category_id = categories.id WHERE categories.id=3');
+ON products.category_id = categories.id WHERE categories.id=5');
 
 $categoryProducts = $getCategoryProductsStatement->fetchAll();
 
@@ -38,9 +39,9 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" class="hamburger-icon">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li class="active #00796b teal darken-2"><a href='../index.php'>Home</a></li>
+            <li><a href="category-photography.php">Photography</a></li>
             <li><a href="category-mac.php">Mac</a></li>
             <li><a href="category-games.php">Games</a></li>
-            <li><a href="category-books.php">Books</a></li>
             <li><a href="category-webapp.php">Webapp</a></li>
 
         </ul>
@@ -49,9 +50,9 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
           
     <ul class="sidenav" class="hamburger">
             <li><a href='../index.php'>Home</a></li>
+            <li><a href="category-photography.php">Photography</a></li>
             <li><a href="category-mac.php">Mac</a></li>
             <li><a href="category-games.php">Games</a></li>
-            <li><a href="category-books.php">Books</a></li>
             <li><a href="category-webapp.php">Webapp</a></li>
   </ul>
 
@@ -59,12 +60,12 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
   
 
 
-<section class="banner banner-category-photography">
+<section class="banner banner-category-book">
 
     <div class="row">
         <div class="col s12 l12">
 
-            <h1 class="apptitle">Photography</h1>
+            <h1 class="apptitle">Books</h1>
 
         </div>
     </div>       
@@ -77,10 +78,10 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
 <div class="row">
       
         <div id="category" class="col s12 m10 offset-m1 l6 offset-l3 category-list">
-            <h2>Photography applications</h2>
+                <h2>Books applications</h2>
 
             <?php foreach($categoryProducts as $categoryProduct): ?>
-                <ul class="collection z-depth-1 ">
+                <ul class="collection z-depth-1">
                         <li class="collection-item avatar">
                             <img src="<?= $categoryProduct["logo"]?>" alt="" class="circle">
                             <span class="title"><?= $categoryProduct["name"]?></span>
@@ -96,7 +97,7 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
 
 <footer>
 
-<?php include 'footer.php';?>
+<?php include './partials/footer.php';?>
 
 </footer>
 
