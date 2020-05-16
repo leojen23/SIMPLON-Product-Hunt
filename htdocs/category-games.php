@@ -24,7 +24,7 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <!-- CUSTOM CSS -->
-<link rel="stylesheet" href="../CSS/style.css">
+<link rel="stylesheet" href="./CSS/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -37,23 +37,23 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
         <a href="./index.php"><img src="./images/logo2.png" width="55px" class="brand-logo"></a>
             <a href="#" data-target="hamburger" class="sidenav-trigger"><i class="material-icons" class="hamburger-icon">menu</i></a>
         <ul class="right hide-on-med-and-down">
-            <li class="active #00796b teal darken-2"><a href='./index.php'>Home</a></li>
-            <li><a href="category-photography.php">Photography</a></li>
-            <li><a href="category-mac.php">Mac</a></li>
-            <li><a href="category-books.php">Books</a></li>
-            <li><a href="category-webapp.php">Webapp</a></li>
+            <li class="active #00796b teal darken-2"><a href='./index.php'><i class="material-icons left">home</i>Home</a></li>
+            <li><a href="category-photography.php"><i class="material-icons left">photo_camera</i>Photography</a></li>
+            <li><a href="category-mac.php"><i class="material-icons left">desktop_mac</i>Mac</a></li>
+            <li><a href="category-books.php"><i class="material-icons left">book</i>Books</a></li>
+            <li><a href="category-webapp.php"><i class="material-icons left">public</i>Webapp</a></li>
 
 
         </ul>
         </div>
     </nav>
           
-    <ul class="sidenav" id="hamburger">
-            <li><a href='./index.php'>Home</a></li>
-            <li><a href="category-photography.php">Photography</a></li>
-            <li><a href="category-mac.php">Mac</a></li>
-            <li><a href="category-books.php">Books</a></li>
-            <li><a href="category-webapp.php">Webapp</a></li>
+    <ul class="sidenav #80cbc4 teal lighten-3" id="hamburger">
+            <li class="active #00796b teal darken-2"><a href='./index.php'><i class="material-icons left brown-text text-darken-3">home</i>Home</a></li>
+            <li><a href="category-photography.php"><i class="material-icons left brown-text text-darken-3">photo_camera</i>Photography</a></li>
+            <li><a href="category-mac.php"><i class="material-icons left brown-text text-darken-3">desktop_mac</i>Mac</a></li>
+            <li><a href="category-books.php"><i class="material-icons left brown-text text-darken-3">book</i>Books</a></li>
+            <li><a href="category-webapp.php"><i class="material-icons left brown-text text-darken-3">public</i>Webapp</a></li>
   </ul>
 
  
@@ -107,6 +107,6 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="../JS/script.js"></script>
+    <script src="./JS/script.js"></script>
         
 </html>

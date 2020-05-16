@@ -58,6 +58,29 @@ nav a:hover{
     font-weight: bold;
 }
 
+#hamburger{
+    opacity: 65%;
+}
+
+#hamburger li{
+    margin-top: 10px;
+}
+
+#hamburger li:hover{
+    background-color: var(--color-btn-dark);
+}
+
+#hamburger a{
+    color:var(--color-primary);
+    font-size: 20px;
+
+}
+
+#hamburger a:hover{
+    color:white;
+}
+
+
 /* BANNER SECTION ------------------------------------------------------- */
 
 .banner{
@@ -66,14 +89,13 @@ nav a:hover{
     height:300px; 
     text-align: center;
     box-shadow: 1px 2px 2px var(--color-shadow-light);
-    font-family: 'Anton', sans-serif;
 }
 
 .banner h1{
     font-size: 90px;
     text-shadow: 2px 2px 2px var(--color-shadow-dark); 
     color:var(--color-primary); 
-    
+    font-family: 'Anton', sans-serif;
 }
 
 .apptitle{
@@ -109,6 +131,15 @@ nav a:hover{
     background: 97% / 27% no-repeat url("../images/fond-book.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
 }
 
+/* SEARCH_BAR SECTION ------------------------------------------------------- */
+
+.search_bar{
+    margin-top: 20px;
+}
+
+.search_bar form{
+    box-shadow: 1px 1px 2px var(--color-shadow-light);
+}
 
 /* CATEGORY SECTION ------------------------------------------------------- */
 
@@ -137,7 +168,7 @@ nav a:hover{
 }  
 
 .banner span{
-    color:var(--color-secondary);
+    color:var(--color-primary);
     font-weight: bold;
     font-size: 40px;  
 }
@@ -189,6 +220,11 @@ nav a:hover{
     font-weight: 300;
 }
 
+.search_box{
+    display: flex;
+    justify-content: space-between;
+    
+}
 
 /* PRODUCT LIST ITEM---------------------------------------------------- */
 
@@ -216,14 +252,45 @@ nav a:hover{
     background-color: var(--color-btn-light);
     border-radius: 5px;
     font-size: 17px; 
-    /* color:rgba(244, 165, 140);  */
     font-weight: bold;
+    color:rgba(244, 165, 140);
+    padding: 0;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .banner button:hover{
     color: var(--color-primary);
     font-weight: bold;
 }
+
+.greeting-msg button{
+    margin-bottom: 22px;
+
+}
+.greeting-msg button a{
+    color:rgba(244, 165, 140);
+}
+
+.greeting-msg button a:hover{
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.search_bar button{
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+
+.search_bar button a:hover{
+    color:var(--color-primary);
+}
+
 
 .card-info .btn{
     width: 50%;

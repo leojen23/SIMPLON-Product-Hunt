@@ -1,11 +1,6 @@
 <?php
 // echo '<pre>' . var_export($data, true) . '</pre>';
-$search = $db->query('SELECT products.name, products.s_description AS description, products.logo, products.vote_count, categories.name AS category 
-FROM products
-INNER JOIN categories
-ON products.category_id = categories.id');
-
-$products = $search->fetchAll();
+ 
 
 ?>
 
@@ -15,12 +10,12 @@ $products = $search->fetchAll();
 
       <form action="" method="GET">
         <div class="input-field">
+        <button type="submit" name="submit" class="waves-effect waves-light btn-large"><i class="material-icons">search</i></button>
           <input id="search" name="search" type="search" placeholder="Search by description or name" required>
-          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
           <i class="material-icons">close</i>
-          <button type="submit" name="submit" class="waves-effect waves-light btn-large">Search</button> 
+           
         </div>
-      </form>
+      </form> 
       <?php 
 
 if(isset($_GET['submit']) && $valid){
@@ -28,15 +23,17 @@ if(isset($_GET['submit']) && $valid){
             echo("Aucun résultat trouvé!");
         }
         foreach($products as $product){?>
-  
-         <ul class="collection z-depth-1 hoverable">
+    <div class="col s12 m4" >
+      <div class="search_box">
+         <ul class="collection z-depth-1">
                         <li class="collection-item avatar">
                             <img src="<?= $product["logo"]?>" alt="" class="circle">
                             <span class="title"><?= $product["name"]?></span>
-                            <p><?= $product["description"]?> <br>
-                            <small><?= $product["category"]?></small></p>
+                            <p><?= $product["s_description"]?> <br>
                         </li>
                  </ul>
+                 </div>
+                 </div>
       <?php  }
 
 }  ?> 

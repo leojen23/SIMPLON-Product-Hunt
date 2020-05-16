@@ -13,9 +13,11 @@ if(isset($_GET['submit']) AND isset($_GET['search'])){
     }
 
     if($valid){
-    $searchByName=$db->prepare("SELECT * FROM products WHERE name LIKE ?");
-    $searchByName->execute(["%". $search ."%"]);
+    $searchByName=$db->prepare("SELECT * FROM products WHERE name LIKE ? OR s_description");
+    $searchByName->execute(["%" . $search ."%"]);
     $products=$searchByName->fetchAll();
+
+
 
     }}
 // echo '<pre>' . var_export($data, true) . '</pre>';
@@ -37,6 +39,7 @@ if(isset($_GET['submit']) AND isset($_GET['search'])){
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./CSS/style.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
 
 <body>
