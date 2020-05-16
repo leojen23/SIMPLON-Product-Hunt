@@ -1,7 +1,7 @@
 <?php
-session_start();
-include './PDO/connection.php';
 
+include './PDO/connection.php';
+include './PDO/get_products.php';
 
 // echo '<pre>' . var_export($data, true) . '</pre>';
 ?>
@@ -26,33 +26,22 @@ include './PDO/connection.php';
 </head>
 
 <body>
+
   <!-- header and nav section start -->
   <?php include './partials/header.php' ?>
 
- 
-  <!-- header and nav section end -->
-
   <!-- Most popular products section start-->
+  <?php include './partials/cards.php' ?>
 
-<?php include './partials/cards.php' ?>
-  
+  <!-- products list section starts-->
 
+  <?php include './partials/product-list.php' ?>
 
-<!-- products list section starts-->
-
-
-<?php include './partials/product-list.php' ?>
-
- 
-<!-- products list section ends-->
-
-
-
-<!-- Footer starts here -->
-   
+  <!-- Footer starts here -->
+    
   <?php include './partials/footer.php' ?>
 
-<!-- footer ends here -->
+
 
 
 

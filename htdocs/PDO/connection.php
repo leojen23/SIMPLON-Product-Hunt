@@ -1,4 +1,5 @@
 <?php
+session_start();
 try
 {
 
@@ -13,5 +14,6 @@ catch (Exception $e)
 {
     die('Erreur : ' . $e->getMessage());
 }
+
 
 ?>
