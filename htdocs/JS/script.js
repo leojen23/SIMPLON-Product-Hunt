@@ -17,8 +17,7 @@ $(document).ready(function(){
        
 
 
-
-
+ 
   
 // // I apply an click event listener on all the card buttons
 //   $upvoteBtns = document.querySelectorAll(".upvote-btn");

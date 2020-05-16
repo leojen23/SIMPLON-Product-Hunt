@@ -34,8 +34,8 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
 
    <nav>
         <div class="nav-wrapper brown darken-2">
-        <img src="./images/logo2.png" width="55px" class="brand-logo">  </>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" class="hamburger-icon">menu</i></a>
+        <a href="./index.php"><img src="./images/logo2.png" width="55px" class="brand-logo"></a>
+            <a href="#" data-target="hamburger" class="sidenav-trigger"><i class="material-icons" class="hamburger-icon">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li class="active #00796b teal darken-2"><a href='./index.php'>Home</a></li>
             <li><a href="category-photography.php">Photography</a></li>
@@ -48,7 +48,7 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
         </div>
     </nav>
           
-    <ul class="sidenav" class="hamburger">
+    <ul class="sidenav" id="hamburger">
             <li><a href='./index.php'>Home</a></li>
             <li><a href="category-photography.php">Photography</a></li>
             <li><a href="category-mac.php">Mac</a></li>
