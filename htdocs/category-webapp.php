@@ -24,7 +24,7 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <!-- CUSTOM CSS -->
-<link rel="stylesheet" href="../CSS/style.css">
+<link rel="stylesheet" href="./CSS/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -34,10 +34,10 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
 
    <nav>
         <div class="nav-wrapper brown darken-2">
-        <img src="../images/logo2.png" width="55px" class="brand-logo">  </>
+        <img src="./images/logo2.png" width="55px" class="brand-logo">  </>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" class="hamburger-icon">menu</i></a>
         <ul class="right hide-on-med-and-down">
-            <li class="active #00796b teal darken-2"><a href='../index.php'>Home</a></li>
+            <li class="active #00796b teal darken-2"><a href='./index.php'>Home</a></li>
             <li><a href="category-photography.php">Photography</a></li>
             <li><a href="category-mac.php">Mac</a></li>
             <li><a href="category-games.php">Games</a></li>
@@ -48,16 +48,12 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
     </nav>
           
     <ul class="sidenav" class="hamburger">
-            <li><a href='../index.php'>Home</a></li>
+            <li><a href='./index.php'>Home</a></li>
             <li><a href="category-photography.php">Photography</a></li>
             <li><a href="category-mac.php">Mac</a></li>
             <li><a href="category-games.php">Games</a></li>
             <li><a href="category-books.php">Books</a></li>
   </ul>
-
- 
-  
-
 
 <section class="banner banner-category-webapp">
 
