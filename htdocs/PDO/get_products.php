@@ -1,43 +1,59 @@
 <?php
-include './PDO/connection.php';
 
-// retrieves TOP 4 popular products infos for CARDS
+// retrieves products info and vote count ordered by DEScending vote count
 
-$getPopularProductsStatement = $db->query('SELECT products.id, products.name, products.s_description AS description, products.logo, products.video,products.vote_count, categories.name AS category
-FROM products
-INNER JOIN categories
-ON products.category_id = categories.id ORDER BY vote_count DESC LIMIT 0,4');
-$top4PopularProducts = $getPopularProductsStatement->fetchAll();
+    $getProductsStatement = $db->query("SELECT
+    `products`.`id`,
+    `products`.`name`,
+    `l_description`,
+    `s_description`AS `description`,
+    `logo`,
+    `video`,
+    `category_id`,
+    `categories`.`name` AS `category_name`,
+    `created_at`,
+    COUNT(`votes`.`product_id`) AS `vote_count`
 
+    FROM
+    `products`
+    LEFT JOIN `votes`
+    ON `products`.`id` = `votes`.`product_id`
+    LEFT JOIN `categories`
+    ON `products`.`category_id`= `categories`.`id`
+    GROUP BY `products`.`id`
+    ORDER BY `vote_count` DESC");
 
-// echo '<pre>' . var_export($top4PopularProducts, true) . '</pre>';
-
-
-// retrieves all popular products infos for the popular list on landing page
-
-$getPopularProductsStatement = $db->query('SELECT products.name, products.s_description AS description, products.logo, products.vote_count, categories.name AS category 
-FROM products
-INNER JOIN categories
-ON products.category_id = categories.id ORDER BY vote_count DESC LIMIT 0,11');
-
-// List of popular products
-$popularProducts = $getPopularProductsStatement->fetchAll();
-
-// echo '<pre>' . var_export($popularProducts, true) . '</pre>';
-
-
+    $products = $getProductsStatement->fetchAll(); 
 
 
 
-// retrieves all popular products infos for the popular list on landing page
+   
 
-$getNewestProductsStatement = $db->query('SELECT products.name, products.s_description AS description, products.logo, products.vote_count, categories.name AS category
-FROM products
-INNER JOIN categories
-ON products.category_id = categories.id ORDER BY created_at DESC LIMIT 0,11');
+    // retrieves products info and vote count ordered by DESC dates
+
+    $getNewProductsStatement = $db->query("SELECT
+    `products`.`id`,
+    `products`.`name`,
+    `l_description`,
+    `s_description`AS `description`,
+    `logo`,
+    `video`,
+    `category_id`,
+    `categories`.`name` AS `category_name`,
+    `created_at`,
+    COUNT(`votes`.`product_id`) AS `vote_count`
+
+    FROM
+    `products`
+    LEFT JOIN `votes`
+    ON `products`.`id` = `votes`.`product_id`
+    LEFT JOIN `categories`
+    ON `products`.`category_id`= `categories`.`id`
+    GROUP BY `products`.`id`
+    ORDER BY `created_at` DESC");
+
+    $newProducts = $getNewProductsStatement->fetchAll(); 
 
 
-// List of newest products
-$newestProducts = $getNewestProductsStatement->fetchAll();
+    
 
-// echo '<pre>' . var_export($newestProducts, true) . '</pre>';

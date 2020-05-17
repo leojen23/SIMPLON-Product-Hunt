@@ -1,6 +1,5 @@
-<?php 
-include './PDO/get_products.php';
-?>
+<?php include './PDO/get_products.php';?>
+
 
 
 <section class=" popular-product container">
@@ -9,51 +8,46 @@ include './PDO/get_products.php';
           <h2>Most popular products</h2>
       </div>
   </div>
-
   <div class="row">
-    <?php foreach($top4PopularProducts as $top4PopularProduct): ?>
-      <div class="col s12 m6 l3 ">
-        <div class="center-align card-container">
-          <div class="card hoverable">
-              <div class="card-img-holder">
-                <img class="reponsive-img" src="<?= $top4PopularProduct["logo"]?>" alt="">
-              </div>
-              <div class="card-info ">
-                <span class="card-title brown-text darken-2"><?= $top4PopularProduct["name"]?></span>
-                <span class="card-category "><?= $top4PopularProduct["category"]?></span>
-                <p><?= $top4PopularProduct["description"]?></p>
-                
-                
-                <form action="send_votes.php?productId=<?=$top4PopularProduct["description"]?>" method="GET">
-                  <input type="hidden" id="productId" name="productId">
-                  <a class=" waves-effect btn upvote-btn card-button" type="submit">
-                    <i class="material-icons left">keyboard_arrow_up</i><?= $top4PopularProduct["vote_count"]?>
-                  </a>
-                </form>
+    <?php for ($i=0; $i < 4 ; $i++):?>
 
+        <!-- link to product infos request for modal -->
+         <?php include "./PDO/Modal_infos.php";?>
 
+         <!-- link to modal content -->
+         <?php include "./partials/modal_content.php";?>
 
-                <div class="card-action">
-                <a href="#modal1" class="modal-trigger brown-text lighten-2">FIND OUT MORE</a>
+        <div class="col s12 m6 l3 ">
+          <div class="center-align card-container">
+            <div class="card hoverable">
+                <div class="card-img-holder">
+                  <img class="reponsive-img" src="<?= $products[$i]["logo"]?>" alt="">
                 </div>
-              </div>
+                <div class="card-info ">
+                  <span class="card-title brown-text darken-2"><?=$products[$i]["name"]?></span>
+                  <span class="card-category "><?=$products[$i]["category_name"]?></span>
+                  <p><?=$products[$i]["description"]?></p>
+                  
+          
+                  <a href="./PDO/votes.php?productId=<?=$products[$i]["id"]?>" class=" waves-effect btn upvote-btn card-button" type="submit">
+                    <i class="material-icons left">keyboard_arrow_up</i><?=$products[$i]["vote_count"]?>
+                  </a>
+                
+                  <div class="card-action">
+                    
+                  <a href="#<?=$products[$i]["id"]?>" type="submit" class="modal-trigger brown-text lighten-2">FIND OUT MORE</a>
+                  </div>
+                </div>
+            </div>
           </div>
-      </div>
-      </div>
-    <?php endforeach;?>
+        </div>
+        
+    <?php endfor;?>
   </div>
+
+  
 </section>
 
-<!-- Modal Structure -->
-<div id="modal1" class="modal">
-  <div class="modal-content">
-    <h4>Modal Header</h4>
-    <p>A bunch of text</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-  </div>
-</div>
 
 
 
