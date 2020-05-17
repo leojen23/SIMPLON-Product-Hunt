@@ -2,9 +2,7 @@
 
 include "connection.php";
 
-
-
-//     // SENDING VOTES----------------------------------------------------------------------------------------
+// SENDING VOTES----------------------------------------------------------------------------------------
 
 if(!empty($_GET["productId"])){
 
@@ -16,15 +14,22 @@ if(!empty($_GET["productId"])){
     $username = $_SESSION["username"] ;
     $getUserIdStatement = $db->prepare("SELECT id FROM users WHERE username = ?");
     $getUserIdStatement->execute([$username]);
-    $userId = $getUserIdStatement->fetch();
-    $userId = intval(implode($userId));
+    $userId = $getUserIdStatement->fetchColumn();
+    // $userId = intval(implode($userId));
     
+    if($userId AND $productId){
+        echo "what the hell are you doing";
+        
+    }else{
+        $insertVotesStatement = $db->prepare("INSERT INTO votes (user_id, product_id) VALUES (?,?)");
+        $insertVotesStatement->execute([$userId, $productId]);
     
-    // insert into votes table
-    $insertVotesStatement = $db->prepare("INSERT INTO votes (user_id, product_id) VALUES (?,?)");
-    $insertVotesStatement->execute([$userId, $productId]);
+        header("location: ../index.php");
 
-    header("location: ../index.php");
+    }
+    // insert into votes table
+  
 
 }
+
 

@@ -26,9 +26,6 @@
     $products = $getProductsStatement->fetchAll(); 
 
 
-
-   
-
     // retrieves products info and vote count ordered by DESC dates
 
     $getNewProductsStatement = $db->query("SELECT

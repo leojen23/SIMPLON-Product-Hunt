@@ -27,10 +27,7 @@
 h2{
     font-weight: 300;
     font-size: 35px;
-    color:var(--color-primary);
-    /* font-weight: bold; */
-    /* padding-bottom: 5px; */
-    /* font-style: italic; */
+    color:var(--color-primary); 
 }
   
 
@@ -58,6 +55,8 @@ nav a:hover{
     font-weight: bold;
 }
 
+
+/* SIDENAV */
 #hamburger{
     opacity: 65%;
 }
@@ -131,15 +130,6 @@ nav a:hover{
     background: 97% / 27% no-repeat url("../images/fond-book.png"), linear-gradient(rgba(93, 64, 55, 0.8), rgba(244, 165, 140, 0.3));     
 }
 
-/* SEARCH_BAR SECTION ------------------------------------------------------- */
-
-.search_bar{
-    margin-top: 20px;
-}
-
-.search_bar form{
-    box-shadow: 1px 1px 2px var(--color-shadow-light);
-}
 
 /* CATEGORY SECTION ------------------------------------------------------- */
 
@@ -172,6 +162,17 @@ nav a:hover{
     font-weight: bold;
     font-size: 40px;  
 }
+
+/* SEARCH_BAR  ------------------------------------------------------- */
+
+.search_bar{
+    margin-top: 20px;
+}
+
+.search_bar form{
+    box-shadow: 1px 1px 2px var(--color-shadow-light);
+}
+
 
 /* PRODUCT CARDS ------------------------------------------------------- */
 
@@ -243,7 +244,6 @@ nav a:hover{
     font-size: 1rem;
     font-weight: 300;
 }
-
 
 /* BUTTONS ------------------------------------------------------------- */
 
@@ -320,15 +320,12 @@ footer a:hover{
     padding: 0 1rem
 }
       
-
-
 /*----------------------------PRODUCT LIST SECTION------------------------------*/
 
 
   /* MEDIA QUERIES ------------------------------------------------------ */
 
 
-  
 @media all and (max-width: 1024px){
     
     body{
@@ -360,26 +357,3 @@ footer a:hover{
 }
 
   
-
-
-/* small devices */
-@media all and (min-width: 576px) {
-
- }
-
-/* // Medium devices  */
-@media (min-width: 768px) {
-
- }
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-
-}
-
- /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-
-
-}

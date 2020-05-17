@@ -31,7 +31,7 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
     <body>
 
         <header>
-
+             <!-- NAV SECTION -->
             <nav>
 
                 <div class="nav-wrapper brown darken-2">
@@ -46,7 +46,7 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
                     </ul>
                 </div>
             
-                    
+                 <!-- SIDENAV BURGER MENU -->   
                 <ul class="sidenav #80cbc4 teal lighten-3" id="hamburger">
                     <li class="active #00796b teal darken-2"><a href='./index.php'><i class="material-icons left brown-text text-darken-3">home</i>Home</a></li>
                     <li><a href="category-photography.php"><i class="material-icons left brown-text text-darken-3">photo_camera</i>Photography</a></li>
@@ -57,7 +57,7 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
 
             </nav>
 
-
+            <!-- BANNER SECTION -->
             <section class="banner banner-category-webapp">
                 <div class="row">
                     <div class="col s12 l12">
@@ -68,6 +68,7 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
 
         </header>
 
+        <!-- CATEGORY SECTION -->
         <section class="category">
             <div class="row">
                 <div id="category" class="col s12 m10 offset-m1 l6 offset-l3 category-list">
@@ -84,7 +85,9 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
                     <?php endforeach;?>
                 </div>
         </section>
+        
 
+        <!-- FOOTER -->
         <footer>
 
             <?php include './partials/footer.php';?>

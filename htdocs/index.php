@@ -12,15 +12,13 @@ if(isset($_GET['submit']) AND isset($_GET['search'])){
         echo("Taper une recherche");
     }
 
+    // retrieves search results
     if($valid){
     $searchByName=$db->prepare("SELECT * FROM products WHERE name LIKE ? OR s_description");
     $searchByName->execute(["%" . $search ."%"]);
     $products=$searchByName->fetchAll();
-
-
-
     }}
-// echo '<pre>' . var_export($data, true) . '</pre>';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -70,7 +68,7 @@ if(isset($_GET['submit']) AND isset($_GET['search'])){
     <!-- MATERIALIZE Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="./JS/script.js"></script>
+  <script src="../JS/script.js"></script>
 
 </body>
 

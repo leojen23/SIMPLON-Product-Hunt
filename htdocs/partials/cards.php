@@ -1,7 +1,6 @@
 <?php include './PDO/get_products.php';?>
 
-
-
+<!-- CARDS -->
 <section class=" popular-product container">
   <div class="row">
       <div class="col s12 left-align brown-text lighten-2">
@@ -28,13 +27,14 @@
                   <span class="card-category "><?=$products[$i]["category_name"]?></span>
                   <p><?=$products[$i]["description"]?></p>
                   
-          
+                  <!-- UPVOTE BUTTON -->
                   <a href="./PDO/votes.php?productId=<?=$products[$i]["id"]?>" class=" waves-effect btn upvote-btn card-button" type="submit">
                     <i class="material-icons left">keyboard_arrow_up</i><?=$products[$i]["vote_count"]?>
                   </a>
                 
                   <div class="card-action">
-                    
+                  
+                  <!-- MODAL TRIGGER BUTTON -->
                   <a href="#<?=$products[$i]["id"]?>" type="submit" class="modal-trigger brown-text lighten-2">FIND OUT MORE</a>
                   </div>
                 </div>

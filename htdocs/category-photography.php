@@ -75,7 +75,7 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
         </header>
 
 
-    <!-- CATEGORY SECTION -->
+        <!-- CATEGORY SECTION -->
         <section class="category">
             <div class="row">
             

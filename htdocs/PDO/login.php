@@ -1,5 +1,4 @@
 <?php
-
 include 'connection.php';
 
 // echo '<pre>' . var_export($data, true) . '</pre>';
@@ -28,7 +27,7 @@ if(!empty($_POST['username'])){
 
     }else{
     
-    // I got back to the landing page
+    // I go back to the landing page
         header("Location: ../index.php");
     }
 

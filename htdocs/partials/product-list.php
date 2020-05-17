@@ -14,6 +14,8 @@
     
     <!-- POPULAR PRODUCT LIST -->
 
+    
+
     <div class="row">
 
         <div id="popular" class="col s12 m10 offset-m1 l6 offset-l3 popular-list">
@@ -43,7 +45,6 @@
             <?php endfor;?>
          
         </div>   
-
 
     <!-- NEWEST PRODUCT LIST -->
 
