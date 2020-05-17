@@ -9,16 +9,13 @@ INNER JOIN categories
 ON products.category_id = categories.id WHERE categories.id=5');
 
 $categoryProducts = $getCategoryProductsStatement->fetchAll();
-
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
+    <title>Books-category</title>
 
     <!--Import Google Icon Font-->
 
@@ -36,29 +33,28 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
 
     <header>
 
-
         <!-- NAV SECTION -->
-    <nav>
+        <nav>
 
             <div class="nav-wrapper brown darken-2">
                 <a href="./index.php"><img src="./images/logo2.png" width="55px" class="brand-logo"></a>
                 <a href="#" data-target="hamburger" class="sidenav-trigger"><i class="material-icons" class="hamburger-icon">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li class="active #00796b teal darken-2"><a href='../index.php'>Home</a></li>
-                    <li><a href="category-photography.php">Photography</a></li>
-                    <li><a href="category-mac.php">Mac</a></li>
-                    <li><a href="category-games.php">Games</a></li>
-                    <li><a href="category-webapp.php">Webapp</a></li>
-                </ul>
+                    <li class="active #00796b teal darken-2"><a href='./index.php'><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href="category-photography.php"><i class="material-icons left">photo_camera</i>Photography</a></li>
+                    <li><a href="category-mac.php"><i class="material-icons left">desktop_mac</i>Mac</a></li>
+                    <li><a href="category-games.php"><i class="material-icons left">extension</i>Games</a></li>
+                    <li><a href="category-webapp.php"><i class="material-icons left">public</i>Webapp</a></li>
+                 </ul>
             </div>
 
             <!-- SIDENAV BURGER MENU -->
-            <ul class="sidenav" id="hamburger">
-                <li><a href='./index.php'>Home</a></li>
-                <li><a href="category-photography.php">Photography</a></li>
-                <li><a href="category-mac.php">Mac</a></li>
-                <li><a href="category-games.php">Games</a></li>
-                <li><a href="category-webapp.php">Webapp</a></li>
+            <ul class="sidenav #80cbc4 teal lighten-3" id="hamburger">
+                <li class="active #00796b teal darken-2"><a href='./index.php'><i class="material-icons left brown-text text-darken-3">home</i>Home</a></li>
+                <li><a href="category-photography.php"><i class="material-icons left brown-text text-darken-3">photo_camera</i>Photography</a></li>
+                <li><a href="category-mac.php"><i class="material-icons left brown-text text-darken-3">desktop_mac</i>Mac</a></li>
+                <li><a href="category-games.php"><i class="material-icons left brown-text text-darken-3">extension</i>Games</a></li>
+                <li><a href="category-webapp.php"><i class="material-icons left brown-text text-darken-3">public</i>Webapp</a></li>
             </ul>
 
         </nav>
@@ -74,6 +70,7 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
                 </div>
             </div>       
         </section>
+
     </header>
 
 
@@ -98,6 +95,7 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
 
         <?php include './partials/footer.php';?>
@@ -110,6 +108,6 @@ $categoryProducts = $getCategoryProductsStatement->fetchAll();
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="../JS/script.js"></script>
+    <script src="./JS/script.js"></script>
         
 </html>

@@ -1,4 +1,5 @@
 <?php
+
 // retrieves products info and vote count ordered by DEScending vote count
 
     $getProductsStatement = $db->query("SELECT
@@ -23,6 +24,10 @@
     ORDER BY `vote_count` DESC");
 
     $products = $getProductsStatement->fetchAll(); 
+
+
+
+   
 
     // retrieves products info and vote count ordered by DESC dates
 

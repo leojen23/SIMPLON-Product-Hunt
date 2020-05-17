@@ -1,21 +1,26 @@
  
+// TABS
+  $(document).ready(function(){
+    $('.tabs').tabs();
+  });
+
+
+
 // NAVBAR---------------------------------------------------------------
 $(document).ready(function(){
   $('.sidenav').sidenav();
 });
 
+
 // MODAL
 $(document).ready(function(){
   $('.modal').modal();
 });
-  // TABS
-  $(document).ready(function(){
-    $('.tabs').tabs();
-  });
-       
-function openModal(){
-  location.href = "#modal";
-}
+
+
+
+ 
+
 
 
 
