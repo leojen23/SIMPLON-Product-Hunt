@@ -1,6 +1,4 @@
-<?php include './PDO/get_products.php';
-
-?>
+<?php include './PDO/get_products.php';?>
 
 
 
@@ -11,30 +9,13 @@
       </div>
   </div>
   <div class="row">
-    <?php for ($i=0; $i < 4 ; $i++):
-          $getModalInfosStatement= $db->prepare("SELECT
-          `category_id`,
-          `products`.`name`,
-          `l_description`,
-          `s_description`,
-          `logo`,
-          `video`,
-          `categories`.`name` AS `category_name`,
-          `created_at`,
-          COUNT(`votes`.`product_id`) AS `vote_count`
+    <?php for ($i=0; $i < 4 ; $i++):?>
 
-          FROM
-          `products`
-          LEFT JOIN `votes`
-          ON `products`.`id` = `votes`.`product_id`
-          LEFT JOIN `categories`
-          ON `products`.`category_id`= `categories`.`id`
-          
-          WHERE `products`.`id`= ?");
+        <!-- link to product infos request for modal -->
+         <?php include "./PDO/Modal_infos.php";?>
 
-
-          $getModalInfosStatement->execute([$products[$i]["id"]]);
-          $modalProductInfo = $getModalInfosStatement->fetch(); ?>
+         <!-- link to modal content -->
+         <?php include "./partials/modal_content.php";?>
 
         <div class="col s12 m6 l3 ">
           <div class="center-align card-container">
@@ -60,21 +41,7 @@
             </div>
           </div>
         </div>
-
-        <div id="<?=$products[$i]["id"]?>" class="modal">
-          <div class="modal-content">
-            <h4><?=$modalProductInfo["name"]?></h4>
-            <video class="responsive-video" controls>
-              <source src="<?=$modalProductInfo["video"]?>" type="video/mp4">
-          </video>
-            <p>A bunch of text</p>
-          </div>
-          <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-          </div>
-        </div>
         
-
     <?php endfor;?>
   </div>
 

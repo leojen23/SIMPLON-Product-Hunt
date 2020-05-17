@@ -13,7 +13,9 @@ $(document).ready(function(){
     $('.tabs').tabs();
   });
        
-
+function openModal(){
+  location.href = "#modal";
+}
 
 
 

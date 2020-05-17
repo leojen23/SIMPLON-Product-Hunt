@@ -26,8 +26,6 @@ if(!empty($_GET["productId"])){
 
     header("location: ../index.php");
 
-}else{
-    echo "wtf";
 }
 
 
