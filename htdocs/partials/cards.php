@@ -28,7 +28,7 @@
                   <p><?=$products[$i]["description"]?></p>
                   
                   <!-- UPVOTE BUTTON -->
-                  <a href="./PDO/votes.php?productId=<?=$products[$i]["id"]?>" class=" waves-effect btn upvote-btn card-button" type="submit">
+                  <a onclick="upVote(<?=$products[$i]['id']?>)" class=" waves-effect btn upvote-btn card-button" type="submit">
                     <i class="material-icons left">keyboard_arrow_up</i><?=$products[$i]["vote_count"]?>
                   </a>
                 

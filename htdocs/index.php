@@ -46,6 +46,7 @@ if(isset($_GET['submit']) AND isset($_GET['search'])){
 
 <body>
 
+
   <!-- header and nav section start -->
   <?php include './partials/header.php' ?>
 
@@ -68,7 +69,7 @@ if(isset($_GET['submit']) AND isset($_GET['search'])){
     <!-- MATERIALIZE Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="../JS/script.js"></script>
+  <script src="./JS/script.js"></script>
 
 </body>
 

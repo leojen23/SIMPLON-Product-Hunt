@@ -3,7 +3,7 @@ include './PDO/connection.php';
 
 // echo '<pre>' . var_export($data, true) . '</pre>';
 
-$getCategoryProductsStatement = $db->query('SELECT products.name, products.s_description AS description, products.logo, products.vote_count, categories.name AS category 
+$getCategoryProductsStatement = $db->query('SELECT products.name, products.s_description AS description, products.logo, categories.name AS category 
 FROM products
 INNER JOIN categories
 ON products.category_id = categories.id WHERE categories.id=5');

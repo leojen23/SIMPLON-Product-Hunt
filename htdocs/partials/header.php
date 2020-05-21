@@ -1,4 +1,5 @@
 <header>
+    
     <!-- NAV SECTION -->
    <nav>
         <div class="nav-wrapper brown darken-2">
@@ -12,6 +13,7 @@
                 <li><a href="./category-webapp.php"><i class="material-icons left">public</i>Webapp</a></li>
             </ul>
         </div>
+
         <!-- SIDENAV -->
         <ul class="sidenav #80cbc4 teal lighten-3" id="hamburger">
             <li><a href="./category-photography.php"><i class="material-icons left brown-text text-darken-3">photo_camera</i>Photography</a></li>
@@ -30,13 +32,19 @@
                 <div class="row">
                     <div class="col s12 l12">
 
+
+                        <?php if(!empty($errorMsg = $_SESSION['errorMsg'])):?>
+                            <div class="errorMsg"><?=$errorMsg?></div>
+                            <?php $_SESSION['errorMsg'] = null;?>
+                        <?php endif;?>
+
                         <?php if(!empty($_SESSION['username'])){
                         ?>
                         
-                        <div class="greeting-msg">
-                            <span class="hello"> Bienvenue <?=$_SESSION['username'];?> </span>
-                            <button class="waves-effect waves-light btn-large"><a href="./PDO/logout.php" type="submit"><i class="material-icons left">lock_open</i>Log out</a></button> 
-                        </div>   
+                            <div class="greeting-msg">
+                                <span class="hello"> Bienvenue <?=$_SESSION['username'];?> </span>
+                                <button class="waves-effect waves-light btn-large"><a href="./PDO/logout.php" type="submit"><i class="material-icons left">lock_open</i>Log out</a></button> 
+                            </div>   
 
                         <?php
                         

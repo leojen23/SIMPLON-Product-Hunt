@@ -2,6 +2,7 @@
 <!-- MODAL CONTENT -->
 
 <div id="<?=$products[$i]["id"]?>" class="modal">
+
     <div class="modal-content">
 
         <!-- Products-list item -->
@@ -32,5 +33,6 @@
     <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Leave</a>
     </div>
+
 </div>
 
