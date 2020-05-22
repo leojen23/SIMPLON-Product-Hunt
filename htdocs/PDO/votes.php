@@ -23,21 +23,9 @@ $voteCount = $getProductsStatement->fetchColumn();
 // je veux encoder le retour la request SQL en JSON
 echo json_encode($voteCount);
 
-die;
+// die;
 
 
-
-
-
-
-
-
-
-if(!empty($_POST["productId"]) AND empty($_SESSION["username"])){
-    $_SESSION["errorMsg"] = " You need to log in to vote";
-    // header("location: ../index.php");
-}
-else{
 
     // stores product ID 
     $productId = intval($_POST["productId"]);
@@ -65,11 +53,15 @@ else{
     }else{
         $_SESSION["errorMsg"] = " You've already voted for this product";
     }
-}
+// }
 
   
 
 
-
+// if(!empty($_POST["productId"]) AND empty($_SESSION["username"])){
+//     $_SESSION["errorMsg"] = " You need to log in to vote";
+//     // header("location: ../index.php");
+// }
+// else{
 
 

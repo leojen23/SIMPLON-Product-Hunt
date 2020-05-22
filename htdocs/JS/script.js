@@ -12,8 +12,6 @@
   $('.modal').modal();
 });
 
-
-
 // REQUETE FETCH
 
 
@@ -28,12 +26,19 @@ function upVote (productId){
   });
 
   myRequest
-    .then(jsonResponse => jsonResponse.text())
-    .then(responseData => {
-
-      console.log(responseData);
+    .then(jsonResponse =>{
+      if(jsonResponse.status == 200){
+        return jsonResponse.text()
+      }else{
+        console.log("error request");
+      }
+    }) 
+    .then(vote => {
+      let upVoteBtn = document.querySelector(".upvote-btn");
+      upVoteBtns.forEach(upVoteBtn => {
+        upVoteBtn.textContent = vote;
+      })
     })
-
 }
       
 
