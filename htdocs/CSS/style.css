@@ -12,8 +12,10 @@
     --color-btn-light:#00796b;
     --color-btn-dark:#00796b;
     --color-btn-shaded:rgb(22, 88, 85);
+    --color-btn-upvoted:rgb(172, 56, 56);
     --color-shadow-light: rgb(114, 113, 113);
     --color-shadow-dark: rgb(0, 0, 0);
+    
 
 }
 
@@ -291,6 +293,8 @@ nav a:hover{
 }
 
 
+
+
 .card-info .btn{
     width: 50%;
     margin: 0 auto;
@@ -298,8 +302,14 @@ nav a:hover{
 
 .product-list .upvote-btn{
     width: 100px;
+    background-color:var(--color-primary);
+   
 }
 
+.btn-upvoted{
+    color: var(--color-btn-upvoted);
+    background-color: var(--color-btn-upvoted);
+}
 
 /* FOOTER SECTION ------------------------------------------ */
 

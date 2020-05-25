@@ -13,10 +13,9 @@
                 <p><?=$modalProductInfo["s_description"]?> <br>
                 <small><?=$modalProductInfo["category_name"]?></small></p>
 
-                <!-- upvote button -->
-                <a href="./PDO/votes.php?productId=<?=$products[$i]["id"]?>" class=" waves-effect btn upvote-btn card-button" type="submit">
-                    <i class="material-icons left">keyboard_arrow_up</i><?=$products[$i]["vote_count"]?>
-                </a>
+                <!-- <a onclick="upVote(<?=$products[$i]['id']?>)" class=" secondary-content waves-effect btn upvote-btn" type="submit" data-id="<?=$products[$i]['id']?>">
+                            <i class="material-icons left">keyboard_arrow_up</i><?=$products[$i]["vote_count"]?>
+                        </a>  -->
             </li>
         </ul>
 

@@ -14,17 +14,24 @@
 
 // REQUETE FETCH
 
+    
 
 // je fais ma request fetch
+let productId;
+
 function upVote (productId){
   const formData = new FormData();
   formData.append("productId", productId);
-
+  // console.log("productId");
+  // console.log(formData.append("productId", productId));
+  productId = productId;
   let myRequest = fetch('../PDO/votes.php',{
     method: "POST",
     body: formData
+    
   });
-
+  // console.log(formData);
+  
   myRequest
     .then(jsonResponse =>{
       if(jsonResponse.status == 200){
@@ -34,27 +41,21 @@ function upVote (productId){
       }
     }) 
     .then(vote => {
-      let upVoteBtn = document.querySelector(".upvote-btn");
-      upVoteBtns.forEach(upVoteBtn => {
-        upVoteBtn.textContent = vote;
-      })
+      console.log(vote);
+      let upVoteBtn = document.querySelector(`.upvote-btn[data-id="${productId}"]`);
+      
+      console.log(upVoteBtn);
+      if(vote){
+        upVoteBtn.textContent = (vote);
+        upVoteBtn.style.backgroundColor = "rgb(172, 56, 56)";
+      }else{
+        upVoteBtn.textContent = "log in";
+        upVoteBtn.style.backgroundColor = "rgb(172, 56, 56)"; 
+      }
+
     })
 }
-      
 
-
-
-
-
-
-
-
-
-
-// je .json() la réponse
-
-// je display les datas
-
-
+  
 
 

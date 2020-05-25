@@ -32,13 +32,6 @@
                 <div class="row">
                     <div class="col s12 l12">
 
-
-                        <?php if(!empty($errorMsg = $_SESSION['errorMsg'])):?>
-                            <div class="errorMsg"><?=$errorMsg?></div>
-                            <?php $_SESSION['errorMsg'] = null;?>
-                        <?php endif;?>
-
-                        
                         <?php if(!empty($_SESSION['username'])){
                         ?>
                         
