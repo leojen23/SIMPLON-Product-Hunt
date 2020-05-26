@@ -17,13 +17,11 @@ for ($i = 0; $i < 15; $i++){
     
     // echo '<pre>' . var_export($arrayearch->fetchColunm()S, true) . '</pre>';
 
-
-    
 }
 
 // fechall et faire une colone et in array
 
-<!-- <?php if(!empty($errorMsg = $_SESSION['errorMsg'])):?>-->
-    <div class="errorMsg"><?=$errorMsg?></div>
-    <!-- <?php $_SESSION['errorMsg'] = null;?> 
-<?php endif;?> -->
+// if(!empty($errorMsg = $_SESSION['errorMsg'])):?>
+    <!-- <div class="errorMsg"><?=$errorMsg?></div> -->
+    <!-- <?php $_SESSION['errorMsg'] = null;?>  -->
+<!-- <?php endif;?> -->

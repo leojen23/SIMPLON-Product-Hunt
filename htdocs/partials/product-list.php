@@ -28,7 +28,6 @@
                         <p><?= $products[$i]["description"]?> <br>
                         <small><?= $products[$i]["category_name"]?></small></p>
 
-
                         <a onclick="upVote(<?=$products[$i]['id']?>)" class=" secondary-content waves-effect btn upvote-btn" type="submit" data-id="<?=$products[$i]['id']?>">
                             <i class="material-icons left">keyboard_arrow_up</i><?=$products[$i]["vote_count"]?>
                         </a>  

@@ -15,7 +15,6 @@
 // REQUETE FETCH
 
     
-
 // je fais ma request fetch
 let productId;
 
@@ -52,7 +51,6 @@ function upVote (productId){
         upVoteBtn.textContent = "log in";
         upVoteBtn.style.backgroundColor = "rgb(172, 56, 56)"; 
       }
-
     })
 }
 

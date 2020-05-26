@@ -16,7 +16,6 @@
     --color-shadow-light: rgb(114, 113, 113);
     --color-shadow-dark: rgb(0, 0, 0);
     
-
 }
 
 
@@ -148,10 +147,10 @@ nav a:hover{
 /* LOG IN FORM ------------------------------------------------------- */
 
 .form-content{
-    width:500px;
+    width:600px;
     margin:0 auto;
     display: flex;
-    justify-content: center;  
+    justify-content: center; 
 }
 
 .form-content span{
@@ -267,7 +266,7 @@ nav a:hover{
 }
 
 .greeting-msg button{
-    margin-bottom: 22px;
+    margin-bottom: 25px;
 
 }
 .greeting-msg button a{
@@ -285,15 +284,11 @@ nav a:hover{
     padding: 0;
     padding-left: 15px;
     padding-right: 15px;
-
 }
 
 .search_bar button a:hover{
     color:var(--color-primary);
 }
-
-
-
 
 .card-info .btn{
     width: 50%;
@@ -303,7 +298,6 @@ nav a:hover{
 .product-list .upvote-btn{
     width: 100px;
     background-color:var(--color-primary);
-   
 }
 
 .btn-upvoted{
